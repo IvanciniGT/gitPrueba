@@ -49,8 +49,8 @@ En esta tabla resumo la mayor parte de símbolos utilizados en markdown, su sign
 
 | Formato | Símbolo | Ejemplo | Estandar [^2] |
 | ------- | :-----: | ------- | ---: |
-| Cursiva | ```*```<br>```_``` | ```*```esto sale en cursiva```*```<br>```_```esto también```_```| ✓ |
-| Negrita | **<br>__ | \*\*esto sale en negrita**<br>\_\_esto también__| ✓ |
+| Cursiva | ```*```<br>```_``` | ```*esto sale en cursiva*```<br>```_esto también_``` | ✓ |
+| Negrita | **<br>__ | ```**```esto sale en negrita```**```<br>```__```esto también```__```| ✓ |
 | Negrita y cursiva | ***<br>___ | \*\*\*esto sale en negrita y cursiva***<br>\_\_\_esto también___| ✓ |
 | Tachado | ~~| \~\~esto sale tachado~~| ✓ |
 | Código | \`| \`esto sale como código` | ✓ |
@@ -94,23 +94,116 @@ En esta tabla resumo la mayor parte de símbolos utilizados en markdown, su sign
 
 ## Formato de textos
 
+### Cursiva
+
+Utilizamos un carácter asterisco `*` o guión bajo `__` por delante y por detrás de un texto que queramos representar en cursiva.
+
+| ***Ejemplo:*** | ***Vista previa:*** |
+| --- | --- |
+| ```Esta *palabra* se muestra en cursiva``` | Esta *palabra* se muestra en cursiva |
+| ```Esta _palabra_ también``` | Esta _palabra_ también |
+
+
+***Notas:***
+- ⚠️ Para evitar problemas con los guiones bajos en medio de una palabra, es aconsejable utilizar asteriscos en lugar de guiones bajos.
+- 💡 Si queremos escribir un texto que incluya guiones bajos o que comience y acabe con guines bajos, para evitar que se muestre en cursiva y sin los guiones bajos basta con escapar el primer guión bajo con una contrabarra ```\```.
+
+    | ***Ejemplo:*** | ***Vista previa:*** |
+    | --- | --- |
+    | ```Esto: '_null_' se muestra en cursiva y sin los guiones bajos``` | Esto: '_null_' se muestra en cursiva y sin los guiones bajos |
+    | ```En cambio esto: '\_null_' se muestra con los guiones bajos y sin cursiva``` | En cambio esto: '\_null_' se muestra con los guiones bajos y sin cursiva |
+
 ### Negrita
 
-Utilizamos dos caracteres asterisco `**` o guión bajo `__` para escribir algo en negrita.
+Utilizamos dos caracteres asterisco `**` o guión bajo `__` por delante y por detrás de un texto que queramos representar en negrita.
 
-***Ejemplos:***
+| ***Ejemplo:*** | ***Vista previa:*** |
+| --- | --- |
+| ```Esta **palabra** se muestra en negrita``` | Esta **palabra** se muestra en negrita |
+| ```Esta __palabra__ también``` | Esta __palabra__ también |
 
-```md    
-La siguiente palabra se muestra en negrita: **palabra**.
-
-Y esta también: __palabra__.
-```
-> La siguiente palabra se muestra en negrita: **palabra**.
->
-> Y esta también: __palabra__.
-
-Notas:
+***Notas:***
 - ⚠️ Para evitar problemas con los guiones bajos en medio de una palabra, es aconsejable utilizar asteriscos en lugar de guiones bajos.
+- 💡 Si queremos escribir un texto que incluya 2 guiones bajos o que comience y acabe con 2 guiones bajos, para evitar que se muestre en negrita y sin los guiones bajos basta con escapar los dos primeros guiones bajos con una contrabarra ```\```.
+
+    | ***Ejemplo:*** | ***Vista previa:*** |
+    | --- | --- |
+    | ```Esto: '__null__' se muestra en negrita y sin los guiones bajos``` | Esto: '__null__' se muestra en negrita y sin los guiones bajos |
+    | ```En cambio esto: '\_\_null__' se muestra con los guiones bajos y sin negrita``` | En cambio esto: '\_\_null__' se muestra con los guiones bajos y sin negrita |
+
+### Negrita y cursiva
+
+Utilizamos tres caracteres asterisco `***` o guión bajo `___` por delante y por detrás de un texto que queramos representar en negrita y cursiva simultáneamente.
+
+| ***Ejemplo:*** | ***Vista previa:*** |
+| --- | --- |
+| ```Esta ***palabra*** se muestra en negrita y cursiva``` | Esta ***palabra*** se muestra en negrita y cursiva |
+| ```Esta ___palabra___ también``` | Esta ___palabra___ también |
+
+***Notas:***
+- ⚠️ Para evitar problemas con los guiones bajos en medio de una palabra, es aconsejable utilizar asteriscos en lugar de guiones bajos.
+- 💡 Si queremos escribir un texto que incluya 3 guiones bajos o que comience y acabe con 3 guiones bajos, para evitar que se muestre en negrita, cursiva y sin los guiones bajos basta con escapar los tres primeros guiones bajos con una contrabarra ```\```.
+
+
+    | ***Ejemplo:*** | ***Vista previa:*** |
+    | --- | --- |
+    | ```Esto: '___null___' se muestra en negrita, cursiva y sin los guiones bajos``` | Esto: '___null___' se muestra en negrita, cursiva y sin los guiones bajos |
+    | ```En cambio esto: '\_\_\_null___' se muestra con los guiones bajos y sin negrita ni cursiva``` | En cambio esto: '\_\_\_null___' se muestra con los guiones bajos y sin negrita ni cursiva |
+
+
+### Código en medio de un párrafo
+
+Utilizamos un carácter contra-comilla (también denominado acento agudo) `` ` `` por delante y por detrás de un texto que queramos representar como código dentro de un párrafo.
+
+
+| ***Ejemplo:*** | ***Vista previa:*** |
+| --- | --- |
+| ```Esta `palabra` se muestra como código``` | Esta `palabra` se muestra como código  |
+
+***Notas:***
+- 💡 Si queremos escribir un texto que incluya una contra-comilla, para evitar que se interprete como código utilizaremos dos contracomillas para enmarcar el texto a mostrar.
+
+    
+    | ***Ejemplo:*** | ***Vista previa:*** |
+    | --- | --- |
+    | ``` `Este código incluye  `contracomillas` que deben mostrarse`.``` | `Este código incluye  `contracomillas` que deben mostrarse`. ❌ |
+    | ``` ``Este código incluye  `contracomillas` que deben mostrarse``.``` | ``Este código incluye  `contracomillas` que deben mostrarse``. ✅ |
+    
+### Tachado
+
+Utilizamos dos caracteres virgulilla `~~` por delante y por detrás de un texto que queramos representar tachado.
+
+| ***Ejemplo:*** | ***Vista previa:*** |
+| --- | --- |
+| ```Esta ~~palabra~~ se muestra tachada``` | Esta ~~palabra~~ se muestra tachada |
+
+### Salto de linea
+
+Para añadir un salto de linea dentro de un párrafo se utilizar el texto `<br>`.
+
+| ***Ejemplo:*** | ***Vista previa:*** |
+| --- | --- |
+| ```Esta es una frase. <br> Y esta otra dentro del mismo párrafo``` | Esta es una frase. <br> Y esta otra dentro del mismo párrafo |
+
+### Enlaces
+
+Para añadir un enlace se pueden utilizar várias sintaxis:
+
+| ***Ejemplo:*** | ***Código:*** | ***Vista previa:*** |
+| --- | --- |--- |
+| Enlace sencillo [^2] | ```https://iochannel.tech``` | https://iochannel.tech |
+| Enlace sencillo [^2] | ```<https://iochannel.tech>``` | <https://iochannel.tech> |
+| Enlace con texto personalizado | ```[Web de IOChannel](https://iochannel.tech)``` | [Web de IOChannel](https://iochannel.tech) |
+| Enlace con texto personalizado y dirección mostrada independientemente | ```Ver [Web de IOChannel][1] <br>[1]: (https://iochannel.tech) "Web de IOChannel"``` | Ver [Web de IOChannel][1] <br>[1]: (https://iochannel.tech) "Web de IOChannel" |
+| Dirección de email [^2] | ```<ivan@iochannel.tech>``` | <ivan@iochannel.tech> |
+
+***Notas:***
+- 💡 Para aplicar formato a un enlace basta con añadirle alrededor las marcas pertinentes englobando todo el enlace o solamente el texto que se visualiza en pantalla
+    
+    | ***Ejemplo:*** | ***Código:*** | ***Vista previa:*** |
+    | --- | --- |--- |
+    | Enlace con texto personalizado en cursiva | ```*[Web de IOChannel](https://iochannel.tech)*``` |  *[Web de IOChannel](https://iochannel.tech)*  |
+    | Enlace con texto personalizado en negrita | ```[**Web de IOChannel**](https://iochannel.tech)*``` | [**Web de IOChannel**](https://iochannel.tech) |
 
 
 ## Titulos
