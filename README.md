@@ -1,4 +1,4 @@
-Ver [web][2] mas adelante.
+Ver [2] mas adelante.
 mas cosas
 
 
