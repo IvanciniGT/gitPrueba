@@ -15,7 +15,7 @@ Este documento está sujeto a cambios, y agradezco tu colaboración. Puedes envi
 Este archivo está bajo una licencia:
 >  [Creative Commons Atribución-SinDerivadas 4.0 Internacional](http://creativecommons.org/licenses/by-nd/4.0/) ![Licencia Creative Commons](https://i.creativecommons.org/l/by-nd/4.0/80x15.png)
 
-## Introducción a markdown {#introduccion}
+## Introducción a markdown
 
 La sintaxis **markdown** permite *maquetar* [^1] un documento mediante el uso de unas ___marcas___ y unas ___reglas sintácticas___ muy simples.
 
@@ -34,7 +34,7 @@ El icono habitual que utilizamos para representar archivos markdown es:
 
 ## Uso de markdown en git 
 
-Como hemos explicado en la [introducción](#introducción), los principales servicios de git en cloud buscan en cada carpeta un archivo llamado `README.md`. 
+Como hemos explicado en la [introducción](#introduccion-a-markdown), los principales servicios de git en cloud buscan en cada carpeta un archivo llamado `README.md`. 
 Si el archivo existe, automáticamente lo convierten a HTML aplicando unas reglas de maquetado que facilitan su lectura por personas y lo muestran por pantalla.
 
 Los desarrolladores que colocan su código en un sistema de control de versión git, utilizan estos archivos para ayudar a entener el contenido de una determinada carpeta o repositorio al resto de personas interesadas en el proyecto.
@@ -57,7 +57,7 @@ En esta tabla resumo la mayor parte de símbolos utilizados en markdown, su sign
 | Salto de linea | \<br>| Esto es una linea\<br>Esto sería otra linea | ✔ |
 | Enlace sencillo | <> | \<https://iochannel.tech> | ✔ |
 | Enlace | \[alt](url) | \[Web de IOChannel](https://iochannel.tech) | ✔ |
-| Enlace interno | \[alt](#url) | \[Introducción](#introduccion) | ✔ |
+| Enlace a título <br> del mismo documento | \[alt](#url) | \[Introducción](#introduccion-del-documento) | ✔ |
 | Imágen | \![alt](url) | \![Logo de IOChannel]\(https://iochannel.tech/logo) | ✔ |
 | Imágen con título | \![alt](url título) | \![Logo de IOChannel]\(https://iochannel.tech/logo "Logotipo de IOChannel" ) | ✘ |
 | Referencia a nota al margen | \[^1] | véase nota [^1] | ✘ |
@@ -72,7 +72,6 @@ En esta tabla resumo la mayor parte de símbolos utilizados en markdown, su sign
 | Título de nivel 4 | #### | #### Esto sería un subapartado | ✔ |
 | Título de nivel 5 | ##### | ##### Esto sería una sección | ✔ |
 | Título de nivel 6 | ###### | ###### Esto sería una subsección | ✔ |
-| Título con referencia | # {#} | ## Esto sería un subtítulo enlazable {#referencia-subtitulo} | ✔ |
 
 ### Formatos de listas:
 
