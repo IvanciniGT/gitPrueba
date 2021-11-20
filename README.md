@@ -1,6 +1,6 @@
 # Los archivos markdown
 
-## Preámbulo
+## Sobre este documento...
 
 He escrito este documento para ayudar a las personas dedicadas al mundo de la informática a entender y familiarizarse los con conceptos del lenguaje markdown.
 
@@ -49,16 +49,16 @@ En esta tabla resumo la mayor parte de símbolos utilizados en markdown, su sign
 
 | Formato | Símbolo | Ejemplo | Estandar [^2] |
 | ------- | :-----: | ------- | ---: |
-| Cursiva | *<br>_ | \*esto sale en cursiva*<br>\_esto también_| ✔ |
-| Negrita | **<br>__ | \*\*esto sale en negrita**<br>\_\_esto también__| ✔ |
-| Negrita y cursiva | ***<br>___ | \*\*\*esto sale en negrita y cursiva***<br>\_\_\_esto también___| ✔ |
-| Tachado | ~~| \~\~esto sale tachado~~| ✔ |
-| Código | \`| \`esto sale como código` | ✔ |
-| Salto de linea | \<br>| Esto es una linea\<br>Esto sería otra linea | ✔ |
-| Enlace sencillo | <> | \<https://iochannel.tech> | ✔ |
-| Enlace | \[alt](url) | \[Web de IOChannel](https://iochannel.tech) | ✔ |
-| Enlace a título <br> del mismo documento | \[alt](#url) | \[Introducción](#introduccion-del-documento) | ✔ |
-| Imágen | \![alt](url) | \![Logo de IOChannel]\(https://iochannel.tech/logo) | ✔ |
+| Cursiva | ```*```<br>```_``` | \*esto sale en cursiva*<br>\_esto también_| ✓ |
+| Negrita | **<br>__ | \*\*esto sale en negrita**<br>\_\_esto también__| ✓ |
+| Negrita y cursiva | ***<br>___ | \*\*\*esto sale en negrita y cursiva***<br>\_\_\_esto también___| ✓ |
+| Tachado | ~~| \~\~esto sale tachado~~| ✓ |
+| Código | \`| \`esto sale como código` | ✓ |
+| Salto de linea | \<br>| Esto es una linea\<br>Esto sería otra linea | ✓ |
+| Enlace sencillo | <> | \<https://iochannel.tech> | ✓ |
+| Enlace | \[alt](url) | \[Web de IOChannel](https://iochannel.tech) | ✓ |
+| Enlace a título <br> del mismo documento | \[alt](#url) | \[Introducción](#introduccion-del-documento) | ✓ |
+| Imágen | \![alt](url) | \![Logo de IOChannel]\(https://iochannel.tech/logo) | ✓ |
 | Imágen con título | \![alt](url título) | \![Logo de IOChannel]\(https://iochannel.tech/logo "Logotipo de IOChannel" ) | ✘ |
 | Referencia a nota al margen | \[^1] | véase nota [^1] | ✘ |
 
@@ -66,20 +66,20 @@ En esta tabla resumo la mayor parte de símbolos utilizados en markdown, su sign
 
 | Formato | Símbolo | Ejemplo | Estandar [^2] |
 | ------- | :-----: | ------- | ---: |
-| Encabezado principal <br> Título 1 | # | # Esto sería un título| ✔ |
-| Encabezado secundario <br> Título 2 | ## | ## Esto sería un subtítulo| ✔ |
-| Título de nivel 3 | ### | ### Esto sería un apartado | ✔ |
-| Título de nivel 4 | #### | #### Esto sería un subapartado | ✔ |
-| Título de nivel 5 | ##### | ##### Esto sería una sección | ✔ |
-| Título de nivel 6 | ###### | ###### Esto sería una subsección | ✔ |
+| Encabezado principal <br> Título 1 | # | # Esto sería un título| ✓ |
+| Encabezado secundario <br> Título 2 | ## | ## Esto sería un subtítulo| ✓ |
+| Título de nivel 3 | ### | ### Esto sería un apartado | ✓ |
+| Título de nivel 4 | #### | #### Esto sería un subapartado | ✓ |
+| Título de nivel 5 | ##### | ##### Esto sería una sección | ✓ |
+| Título de nivel 6 | ###### | ###### Esto sería una subsección | ✓ |
 
 ### Formatos de listas:
 
 | Formato | Símbolo | Ejemplo | Estandar [^2] |
 | ------- | :----- | ------- | ---: |
-| Lista | -<br>*<br>+ | \- Esto es una lista<br>\- Con varios elementos<br><br>\* Esto también sería una lista<br>\* Con varios elementos | ✔ |
-| Sublista | -, * o + <br>(deben aparecer indentados) | \- Esto es una lista<br>&nbsp;&nbsp;&nbsp;&nbsp;* Esto sería una sublista<br>&nbsp;&nbsp;&nbsp;&nbsp;* Con varios elementos | ✔ |
-| Lista numerada | 1.<br>2.<br>3. | 1\. Esto es el primer elemento<br>2\. Esto es el segundo elemento | ✔ |
+| Lista | -<br>*<br>+ | \- Esto es una lista<br>\- Con varios elementos<br><br>\* Esto también sería una lista<br>\* Con varios elementos | ✓ |
+| Sublista | -, * o + <br>(deben aparecer indentados) | \- Esto es una lista<br>&nbsp;&nbsp;&nbsp;&nbsp;* Esto sería una sublista<br>&nbsp;&nbsp;&nbsp;&nbsp;* Con varios elementos | ✓ |
+| Lista numerada | 1.<br>2.<br>3. | 1\. Esto es el primer elemento<br>2\. Esto es el segundo elemento | ✓ |
 | Lista de definiciones | :| Elemento a definir<br>\: definición<br><br>Otro elemento a definir<br>\: Otra definición | ✘ |
 | Lista de tareas | \- \[ ]<br>\- \[x] | \- \[x] Esta es una tarea realizada<br>\- \[ ] Esta es una tarea sin realizar | ✘ |
 
@@ -87,10 +87,85 @@ En esta tabla resumo la mayor parte de símbolos utilizados en markdown, su sign
 
 | Formato | Símbolo | Ejemplo | Estandar [^2] |
 | ------- | :----- | ------- | ---: |
-| Linea de separación | ---<br>*** | --- | ✔ |
-| Cita | > | > Esto aparecería como una cita.<br>><br>> Que podría tener varias lineas<br>> y su \*\*propio formato** | ✔ |
+| Linea de separación | ---<br>*** | --- | ✓ |
+| Cita | > | > Esto aparecería como una cita.<br>><br>> Que podría tener varias lineas<br>> y su \*\*propio formato** | ✓ |
 | Código | \```formato<br>CONTENIDO<br>``` | \```bash<br>echo 'HOLA'<br>``` | ✘ |
 | Nota al margen | \[^]: | \[\^1]: Esto es una nota al margen | ✘ |
+
+## Formato de textos
+
+### Negrita
+
+Utilizamos dos caracteres asterisco `**` o guión bajo `__` para escribir algo en negrita.
+
+***Ejemplos:***
+
+```md    
+La siguiente palabra se muestra en negrita: **palabra**.
+
+Y esta también: __palabra__.
+```
+> La siguiente palabra se muestra en negrita: **palabra**.
+>
+> Y esta también: __palabra__.
+
+Notas:
+- ⚠️ Para evitar problemas con los guiones bajos en medio de una palabra, es aconsejable utilizar asteriscos en lugar de guiones bajos.
+
+
+## Titulos
+
+Utilizamos el carácter `#` al principio de una linea para identificarla como un título.
+
+El número de caracteres `#` que se utilicen, denota el nivel del título. De esta forma:
+- Una única almohadilla `#` establece un título de nivel 1. El más importante.
+- Dos almohadillas `##` establecen un subtítulo o título de nivel 2.
+- Tres almohadillas `###` establecen un título de nivel 3.
+- Así sucesivamente hasta los títulos de nivel 6, identificados por 6 almohadillas: `######`
+
+***Ejemplos:***
+
+```md    
+### Este es un título de nivel 3
+#### Y este uno de nivel 4
+```
+>    ### Este es un título de nivel 3
+>    #### Y este uno de nivel 4
+
+Notas:
+- ⚠️Es aconsejable dejar una linea en blanco antes y después de un título.
+    ```md
+    Si aquí hay un texto...    
+    ### Este título no debería empezar aquí.❌
+    Ni este texto aquí debajo.❌
+
+    ### Este título si está bien escrito pues le precede una línea en blanco y le sigue otra linea en blanco.✅
+    
+    Este sería el primer párrafo dentro del apartado.✅
+
+    ```
+- ⚠️Es aconsejable dejar un espacio en blanco después del último carácter almohadilla.
+    ```md    
+    ### Este título sigue unas buenas prácticas.✅
+
+    ###Este no las sigue. Esto debería evitarse.❌
+    ```
+
+- 💡Algunos procesadores de markdown (como los que se utilizan dentro de github o gitlab), generan idenficadores automáticamente para cada título. El identificador tiene por valor el texto del título en minúsculas y con los espacios en blanco transformacos a guiones.
+
+    Ejemplo
+    
+    ```md
+    ### Ejemplo de título
+
+    El título de arriba puede referenciarse mediante el enlace: 
+    [Ir al apartado Ejemplo de título](#ejemplo-de-título)
+    ```
+
+    >    ### Ejemplo de título
+    >    [Ir al apartado Ejemplo de título](#ejemplo-de-titulo)
+
+
 
 
 # Notas:
