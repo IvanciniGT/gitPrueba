@@ -49,7 +49,7 @@ En esta tabla resumo la mayor parte de símbolos utilizados en markdown, su sign
 
 | Formato | Símbolo | Ejemplo | Estandar [^2] |
 | ------- | :-----: | ------- | ---: |
-| Cursiva | ```*```<br>```_``` | \*esto sale en cursiva*<br>\_esto también_| ✓ |
+| Cursiva | ```*```<br>```_``` | ```*```esto sale en cursiva```<br>```_```esto también```_```| ✓ |
 | Negrita | **<br>__ | \*\*esto sale en negrita**<br>\_\_esto también__| ✓ |
 | Negrita y cursiva | ***<br>___ | \*\*\*esto sale en negrita y cursiva***<br>\_\_\_esto también___| ✓ |
 | Tachado | ~~| \~\~esto sale tachado~~| ✓ |
