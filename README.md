@@ -34,7 +34,7 @@ El icono habitual que utilizamos para representar archivos markdown es:
 
 ## Uso de markdown en git 
 
-Como hemos explicado en la [introducción](#introduccion-a-markdown), los principales servicios de git en cloud buscan en cada carpeta un archivo llamado `README.md`. 
+Como hemos explicado en la [introducción](#introducción-a-markdown), los principales servicios de git en cloud buscan en cada carpeta un archivo llamado `README.md`. 
 Si el archivo existe, automáticamente lo convierten a HTML aplicando unas reglas de maquetado que facilitan su lectura por personas y lo muestran por pantalla.
 
 Los desarrolladores que colocan su código en un sistema de control de versión git, utilizan estos archivos para ayudar a entener el contenido de una determinada carpeta o repositorio al resto de personas interesadas en el proyecto.
