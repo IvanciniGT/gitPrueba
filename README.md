@@ -1,4 +1,4 @@
-Ver [Web de IOChannel][2] mas adelante.
+Ver [web][2] mas adelante.
 mas cosas
 
 
