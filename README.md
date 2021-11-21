@@ -497,7 +497,7 @@ El número de caracteres `#` que se utilicen, denota el nivel del título. De es
 
 - 💡&nbsp;Si estamos creando un archivo md que vaya a renderizarse automáticamente dentro de una página web (por ejemplo un archivo README.md en github o gitlab), hay que tener cuidado al utilizar un título de nivel 1, ya que al procesarse dará lugar a un elemento HTML de tipo `<h1>`. 
     
-    Estos servicios, por su parte, ya añaden un título de tipo `<h1>' a la página HTML en la que se incrusta el texto del archivo README.md, lo que puede suponer problemas para algunos navegadores y motores de búsqueda. 
+    Estos servicios, por su parte, ya añaden un título de tipo `<h1>` a la página HTML en la que se incrusta el texto del archivo README.md, lo que puede suponer problemas para algunos navegadores y motores de búsqueda. 
 
     En estos escenarios es aconsejable valorar si en lugar de utilziar un título de primer nivel, conviene directamente utilizar títulos de segundo nivel en su lugar, y evitar el uso de los títulos de primer nivel.
 
