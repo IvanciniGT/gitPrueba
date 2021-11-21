@@ -832,7 +832,7 @@ Para escribir un bloque de código con resaltado de sintaxis, escribiremos:
 
 #### ***Ejemplo:***
 
-<pre><code>```md
+<pre><code>```bash
     echo Copiando el archivo README.md
     cp README.md ~/README.md
     echo El archivo ha sido copiado
@@ -841,7 +841,7 @@ Para escribir un bloque de código con resaltado de sintaxis, escribiremos:
 
 #### ***Resultado al visualizarse:***
 
-```md
+```bash
     echo Copiando el archivo README.md
     cp README.md ~/README.md
     echo El archivo ha sido copiado
