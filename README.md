@@ -87,50 +87,50 @@ En esta tabla resumo la mayor parte de símbolos utilizados en markdown, su sign
 
 ### Estilos y elementos dentro de textos:
 
-| Formato | Símbolo | Ejemplo | Estandar [^2] |
+| Formato | Símbolo | Ejemplo | Disponible en |
 | ------- | :-----: | ------- | ---: |
-| [Cursiva](#cursiva) | ```*```<br>```_``` | ```*esto sale en cursiva*```<br>```_esto también_``` | ✓ |
-| [Negrita](#negrita) | ```**```<br>```__``` | ```**esto sale en negrita**```<br>```__``` ```esto también__``` | ✓ |
-| [Negrita y cursiva](#negrita-y-cursiva) |  ```***```<br>```___```  | ```***esto sale en negrita y cursiva***```<br>```___esto también___```| ✓ |
-| [Tachado](#tachado) | ```~~```| ```~~esto sale tachado~~```| ✓ |
-| [Código](#código) | `` ` ``| `` `esto sale como código` `` | ✓ |
-| [Salto de línea](#salto-de-línea) | ```<br>```| ```Esto es una línea<br>Esto sería otra línea``` | ✓ |
-| [Enlace sencillo](#enlaces) | ```<>``` | ```<https://iochannel.tech>``` | ✓ |
-| [Enlace personalizado ](#enlaces) | ```[texto a mostrar](url)``` | ```[Web de IOChannel](https://iochannel.tech)``` | ✓ |
-| [Enlace que abre en nueva pestaña](#enlaces) | ```[texto a mostrar](url){:target="_blank"}``` | ```[Web de IOChannel](https://iochannel.tech){:target="_blank"}``` | ✘ |
-| [Enlace a título del mismo documento](#enlaces) <br> | ```[texto a mostrar](#url)``` | ```[Introducción](#introduccion-del-documento)``` | ✓ |
-| [Imágen](#imágenes) | ```[alt](url)``` | ```[Logo de IOChannel]```\(https://iochannel.tech/logo) | ✓ |
-| [Imágen con título](#imágenes) | ```[alt](url título)``` | ```[Logo de IOChannel]```(https://iochannel.tech/logo) ```"Logotipo de IOChannel" )``` | ✘ |
-| [Referencia a nota al margen](#notas-al-margen--) | ```[^1]``` | ```véase nota [^1]``` | ✘ |
+| [Cursiva](#cursiva) | ```*```<br>```_``` | ```*esto sale en cursiva*```<br>```_esto también_``` | ![markdown] ![github] ![gitlab] |
+| [Negrita](#negrita) | ```**```<br>```__``` | ```**esto sale en negrita**```<br>```__``` ```esto también__``` | ![markdown] ![github] ![gitlab] |
+| [Negrita y cursiva](#negrita-y-cursiva) |  ```***```<br>```___```  | ```***esto sale en negrita y cursiva***```<br>```___esto también___```| ![markdown] ![github] ![gitlab] |
+| [Tachado](#tachado) | ```~~```| ```~~esto sale tachado~~```| ![markdown] ![github] ![gitlab] |
+| [Código](#código) | `` ` ``| `` `esto sale como código` `` | ![markdown] ![github] ![gitlab] |
+| [Salto de línea](#salto-de-línea) | ```<br>```| ```Esto es una línea<br>Esto sería otra línea``` | ![markdown] ![github] ![gitlab] |
+| [Enlace sencillo](#enlaces) | ```<>``` | ```<https://iochannel.tech>``` | ![markdown] ![github] ![gitlab] |
+| [Enlace personalizado ](#enlaces) | ```[texto a mostrar](url)``` | ```[Web de IOChannel](https://iochannel.tech)``` | ![markdown] ![github] ![gitlab] |
+| [Enlace que abre en nueva pestaña](#enlaces) | ```[texto a mostrar](url){:target="_blank"}``` | ```[Web de IOChannel](https://iochannel.tech){:target="_blank"}``` | ![github] ![gitlab] |
+| [Enlace a título del mismo documento](#enlaces) <br> | ```[texto a mostrar](#url)``` | ```[Introducción](#introduccion-del-documento)``` | ![markdown] ![github] ![gitlab] |
+| [Imágen](#imágenes) | ```[alt](url)``` | ```[Logo de IOChannel]```\(https://iochannel.tech/logo) | ![markdown] ![github] ![gitlab] |
+| [Imágen con título](#imágenes) | ```[alt](url título)``` | ```[Logo de IOChannel]```(https://iochannel.tech/logo) ```"Logotipo de IOChannel" )``` | ![github] ![gitlab] |
+| [Referencia a nota al margen](#notas-al-margen--) | ```[^1]``` | ```véase nota [^1]``` | ![github] ![gitlab] |
 
 ### Formatos de Título:
 
-| Formato | Símbolo | Ejemplo | Estandar [^2] |
+| Formato | Símbolo | Ejemplo | Disponible en |
 | ------- | :-----: | ------- | ---: |
-| [Encabezado principal <br> Título 1](#títulos) | ```#``` | ```# Esto sería un título```| ✓ |
-| [Encabezado secundario <br> Título 2](#títulos) | ```##``` | ```## Esto sería un subtítulo```| ✓ |
-| [Título de nivel 3](#títulos) | ```###``` | ```### Esto sería un apartado ```| ✓ |
-| [Título de nivel 4](#títulos) | ```####``` | ```#### Esto sería un subapartado``` | ✓ |
-| [Título de nivel 5](#títulos) | ```#####``` | ```##### Esto sería una sección``` | ✓ |
-| [Título de nivel 6](#títulos) | ```######``` | ```###### Esto sería una subsección``` | ✓ |
+| [Encabezado principal <br> Título 1](#títulos) | ```#``` | ```# Esto sería un título```| ![markdown] ![github] ![gitlab] |
+| [Encabezado secundario <br> Título 2](#títulos) | ```##``` | ```## Esto sería un subtítulo```| ![markdown] ![github] ![gitlab] |
+| [Título de nivel 3](#títulos) | ```###``` | ```### Esto sería un apartado ```| ![markdown] ![github] ![gitlab] |
+| [Título de nivel 4](#títulos) | ```####``` | ```#### Esto sería un subapartado``` | ![markdown] ![github] ![gitlab] |
+| [Título de nivel 5](#títulos) | ```#####``` | ```##### Esto sería una sección``` | ![markdown] ![github] ![gitlab] |
+| [Título de nivel 6](#títulos) | ```######``` | ```###### Esto sería una subsección``` | ![markdown] ![github] ![gitlab] |
 
 ### Formatos de listas:
 
-| Formato | Símbolo | Ejemplo | Estandar [^2] |
+| Formato | Símbolo | Ejemplo | Disponible en |
 | ------- | :----- | ------- | ---: |
-| [Lista](#listas) | ```-```<br>```*```<br>```+``` |  ```- Esto es una lista```<br> ```- Con varios elementos```<br> &nbsp;&nbsp;&nbsp;&nbsp;```* Esto sería una sublista```<br> &nbsp;&nbsp;&nbsp;&nbsp;```* Con varios elementos``` | ✓ |
-| [Lista numerada](#listas-numeradas) | ```1.```<br>```2.```<br>```3.``` | ```1. Esto es el primer elemento```<br>```2. Esto es el segundo elemento ```| ✓ |
-| [Lista de tareas](#listas-de-tareas--) | ```- []```<br>\```- [x]``` | \- ```[x] Esta es una tarea realizada```<br>\- ```[ ] Esta es una tarea sin realizar``` | ✘ |
+| [Lista](#listas) | ```-```<br>```*```<br>```+``` |  ```- Esto es una lista```<br> ```- Con varios elementos```<br> &nbsp;&nbsp;&nbsp;&nbsp;```* Esto sería una sublista```<br> &nbsp;&nbsp;&nbsp;&nbsp;```* Con varios elementos``` | ![markdown] ![github] ![gitlab] |
+| [Lista numerada](#listas-numeradas) | ```1.```<br>```2.```<br>```3.``` | ```1. Esto es el primer elemento```<br>```2. Esto es el segundo elemento ```| ![markdown] ![github] ![gitlab] |
+| [Lista de tareas](#listas-de-tareas--) | ```- []```<br>\```- [x]``` | \- ```[x] Esta es una tarea realizada```<br>\- ```[ ] Esta es una tarea sin realizar``` | ![github] ![gitlab] |
 
 ### Formatos especiales de bloque:
-| Formato | Símbolo | Ejemplo | Estandar [^2] |
+| Formato | Símbolo | Ejemplo | Disponible en |
 | ------- | :----- | ------- | ---: |
-| [Línea de separación](#línea-de-separación) | ```---```<br>```***``` | ```---``` | ✓ |
-| [Cita](#citas) | ```>``` | ```> Esto aparecería como una cita.```<br><br>```> Que podría tener varias líneas```<br>```> y su **propio formato**``` | ✓ |
-| [Código](#código) |  ` ```formato`<br>`CONTENIDO`<br>` ``` ` | ` ```bash`<br>`echo HOLA`<br>` ``` ` | ✘ |
-| [Nota al margen](#notas-al-margen--) | ```[^]:``` | ```[^1]: Esto es una nota al margen``` | ✘ |
+| [Línea de separación](#línea-de-separación) | ```---```<br>```***``` | ```---``` | ![markdown] ![github] ![gitlab] |
+| [Cita](#citas) | ```>``` | ```> Esto aparecería como una cita.```<br><br>```> Que podría tener varias líneas```<br>```> y su **propio formato**``` | ![markdown] ![github] ![gitlab] |
+| [Código](#código) |  ` ```formato`<br>`CONTENIDO`<br>` ``` ` | ` ```bash`<br>`echo HOLA`<br>` ``` ` | ![github] ![gitlab] |
+| [Nota al margen](#notas-al-margen--) | ```[^]:``` | ```[^1]: Esto es una nota al margen``` | ![github] ![gitlab] |
 
-### Tablas:
+### Tablas: Disponible en ![github] ![gitlab]
 
 #### ***Ejemplo:***
 
@@ -293,7 +293,7 @@ Para añadir un enlace se pueden utilizar várias sintaxis:
 
 | ***Ejemplo:*** | ***Código:*** | ***Resultado al visualizarse:*** | ***Uso*** |
 | --- | --- |--- | --: |
-| Dirección de email | ```[ivan@iochannel.tech](mailto:ivan@iochannel.tech)``` | <ivan@iochannel.tech> | ![markdown] ![github] ![gitlab] |
+| Dirección de email | ```[ivan@iochannel.tech](mailto:ivan@iochannel.tech)``` | <ivan@iochannel.tech> | ![github] ![gitlab] |
 | Dirección de email  | ```<ivan@iochannel.tech>``` | <ivan@iochannel.tech> | ![github]  ![gitlab] |
 | Enlace sencillo | ```https://iochannel.tech``` | https://iochannel.tech | ![github] ![gitlab] |
 | Enlace sencillo | ```<https://iochannel.tech>``` | <https://iochannel.tech> | ![github] ![gitlab] |
@@ -735,6 +735,8 @@ Por aprender de markdown:
 - [Línea de separación](#línea-de-separación)
 - [Cita](#citas)
 - [Código](#código)
+  - [los sencillos](#bloques-de-código-sencillos)
+  - [los de resaltado de sintaxis](#bloques-de-código-con-resaltado-de-sintaxis--)
 
 ---
 
@@ -791,7 +793,7 @@ Para representar un conjunto de líneas escritas en un determinado lenguaje info
 
 En markdown se utilizan dos tipos de bloques de código: 
 - [los sencillos](#bloques-de-código-sencillos)
-- [los de resaltado de sintaxis](#bloques-de-código-con-resaltado-de-sintaxis)
+- [los de resaltado de sintaxis](#bloques-de-código-con-resaltado-de-sintaxis--)
 
 ---
 ### Bloques de código sencillos
@@ -833,18 +835,18 @@ Para escribir un bloque de código con resaltado de sintaxis, escribiremos:
 #### ***Ejemplo:***
 
 <pre><code>```bash
-    echo Copiando el archivo README.md
-    cp README.md ~/README.md
-    echo El archivo ha sido copiado
+echo Copiando el archivo README.md
+cp README.md ~/README.md
+echo El archivo ha sido copiado
 ```
 </code></pre>
 
 #### ***Resultado al visualizarse:***
 
 ```bash
-    echo Copiando el archivo README.md
-    cp README.md ~/README.md
-    echo El archivo ha sido copiado
+echo Copiando el archivo README.md
+cp README.md ~/README.md
+echo El archivo ha sido copiado
 ```
 
 Nótese como en el ejemplo anterior, los items de la lista están siendo pintados de otro color, así como se están aplicando los formatos de cursiva y negrita.
@@ -909,7 +911,7 @@ Como puede verse en el ejemplo, para conseguir que una columna quede alíneada a
 
 - 💡&nbsp;Los procesadores de markdown separan las columnas cuando encuentran el signo `|`. No es necesario que al escribir cada línea, las columnas tengan el mismo ancho.
     
-    No obstante hay personas a las que les gusta que la tabla no solo se muestre bien formateada al precesarse el fichero, sino incluso cuando el fichero es leido en texto plano, y prefieren añadir espacios en blanco en cada celda para que la tabla sea fácilmente legible. 
+    No obstante hay personas a las que les gusta que la tabla no solo se muestre bien formateada al procesarse el fichero, sino incluso cuando el fichero es leido en texto plano, y prefieren añadir espacios en blanco en cada celda para que la tabla sea fácilmente legible. 
 
     Esto es algo totalmente opcional y no afecta a la visualización final tras procesar el documento.
 
@@ -924,8 +926,7 @@ Como puede verse en el ejemplo, para conseguir que una columna quede alíneada a
 
 ---
 
-## Notas:
-
+**Notas**:
 [^1]: Maquetar: Componer gráficamente un documento, asignando estilos y organizando contenido, para facilitar su lectura por personas.
 
 [markdown]: ./markdown.svg 
