@@ -66,6 +66,11 @@ Aunque no se utiliza sólo para ello, markdown es el formato estándar para docu
 - [gitlab](https://gitlab.svg)
 - [bitbucket](https://bitbucket.org)
 
+Otros usos habituales de markdown son:
+- [La documentación de charts de Helm para Kubernetes](https://helm.readthedocs.io/en/latest/awesome/#the-readmemd-file)
+- [La documentación de roles de Ansible](https://docs.ansible.com/ansible/latest/galaxy/dev_guide.html)
+- La documentación de imágenes de Docker en hub.docker.com
+
 A los archivos escritos según la sintaxis markdown les añadimos la extensión `.md`.
 
 El icono habitual que utilizamos para representar archivos markdown es:
