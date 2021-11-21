@@ -63,7 +63,7 @@ La sintaxis **markdown** permite *maquetar* [^1] un documento mediante el uso de
 
 Aunque no se utiliza sólo para ello, markdown es el formato estándar para documentar y dar información en los repositorios git, y es interpretado automáticamente por los principales servicios cloud de git, como:
 - [github](https://github.com)
-- [gitlab](https://gitlab.com)
+- [gitlab](https://gitlab.svg)
 - [bitbucket](https://bitbucket.org)
 
 A los archivos escritos según la sintaxis markdown les añadimos la extensión `.md`.
@@ -89,48 +89,48 @@ En esta tabla resumo la mayor parte de símbolos utilizados en markdown, su sign
 
 | Formato | Símbolo | Ejemplo | Disponible en |
 | ------- | :-----: | ------- | ---: |
-| [Cursiva](#cursiva) | ```*```<br>```_``` | ```*esto sale en cursiva*```<br>```_esto también_``` | ![markdown] ![github] ![gitlab] |
-| [Negrita](#negrita) | ```**```<br>```__``` | ```**esto sale en negrita**```<br>```__``` ```esto también__``` | ![markdown] ![github] ![gitlab] |
-| [Negrita y cursiva](#negrita-y-cursiva) |  ```***```<br>```___```  | ```***esto sale en negrita y cursiva***```<br>```___esto también___```| ![markdown] ![github] ![gitlab] |
-| [Tachado](#tachado) | ```~~```| ```~~esto sale tachado~~```| ![markdown] ![github] ![gitlab] |
-| [Código](#código) | `` ` ``| `` `esto sale como código` `` | ![markdown] ![github] ![gitlab] |
-| [Salto de línea](#salto-de-línea) | ```<br>```| ```Esto es una línea<br>Esto sería otra línea``` | ![markdown] ![github] ![gitlab] |
-| [Enlace sencillo](#enlaces) | ```<>``` | ```<https://iochannel.tech>``` | ![markdown] ![github] ![gitlab] |
-| [Enlace personalizado ](#enlaces) | ```[texto a mostrar](url)``` | ```[Web de IOChannel](https://iochannel.tech)``` | ![markdown] ![github] ![gitlab] |
-| [Enlace que abre en nueva pestaña](#enlaces) | ```[texto a mostrar](url){:target="_blank"}``` | ```[Web de IOChannel](https://iochannel.tech){:target="_blank"}``` | ![github] ![gitlab] |
-| [Enlace a título del mismo documento](#enlaces) <br> | ```[texto a mostrar](#url)``` | ```[Introducción](#introduccion-del-documento)``` | ![markdown] ![github] ![gitlab] |
-| [Imágen](#imágenes) | ```[alt](url)``` | ```[Logo de IOChannel]```\(https://iochannel.tech/logo) | ![markdown] ![github] ![gitlab] |
-| [Imágen con título](#imágenes) | ```[alt](url título)``` | ```[Logo de IOChannel]```(https://iochannel.tech/logo) ```"Logotipo de IOChannel" )``` | ![github] ![gitlab] |
-| [Referencia a nota al margen](#notas-al-margen--) | ```[^1]``` | ```véase nota [^1]``` | ![github] ![gitlab] |
+| [Cursiva](#cursiva) | ```*```<br>```_``` | ```*esto sale en cursiva*```<br>```_esto también_``` | <img src="markdown.svg" height="15pt"/> <img src="github.svg" height="15pt"/> <img src="gitlab.svg" height="15pt"/> |
+| [Negrita](#negrita) | ```**```<br>```__``` | ```**esto sale en negrita**```<br>```__``` ```esto también__``` | <img src="markdown.svg" height="15pt"/> <img src="github.svg" height="15pt"/> <img src="gitlab.svg" height="15pt"/> |
+| [Negrita y cursiva](#negrita-y-cursiva) |  ```***```<br>```___```  | ```***esto sale en negrita y cursiva***```<br>```___esto también___```| <img src="markdown.svg" height="15pt"/> <img src="github.svg" height="15pt"/> <img src="gitlab.svg" height="15pt"/> |
+| [Tachado](#tachado) | ```~~```| ```~~esto sale tachado~~```| <img src="markdown.svg" height="15pt"/> <img src="github.svg" height="15pt"/> <img src="gitlab.svg" height="15pt"/> |
+| [Código](#código) | `` ` ``| `` `esto sale como código` `` | <img src="markdown.svg" height="15pt"/> <img src="github.svg" height="15pt"/> <img src="gitlab.svg" height="15pt"/> |
+| [Salto de línea](#salto-de-línea) | ```<br>```| ```Esto es una línea<br>Esto sería otra línea``` | <img src="markdown.svg" height="15pt"/> <img src="github.svg" height="15pt"/> <img src="gitlab.svg" height="15pt"/> |
+| [Enlace sencillo](#enlaces) | ```<>``` | ```<https://iochannel.tech>``` | <img src="markdown.svg" height="15pt"/> <img src="github.svg" height="15pt"/> <img src="gitlab.svg" height="15pt"/> |
+| [Enlace personalizado ](#enlaces) | ```[texto a mostrar](url)``` | ```[Web de IOChannel](https://iochannel.tech)``` | <img src="markdown.svg" height="15pt"/> <img src="github.svg" height="15pt"/> <img src="gitlab.svg" height="15pt"/> |
+| [Enlace que abre en nueva pestaña](#enlaces) | ```[texto a mostrar](url){:target="_blank"}``` | ```[Web de IOChannel](https://iochannel.tech){:target="_blank"}``` | <img src="github.svg" height="15pt"/> <img src="gitlab.svg" height="15pt"/> |
+| [Enlace a título del mismo documento](#enlaces) <br> | ```[texto a mostrar](#url)``` | ```[Introducción](#introduccion-del-documento)``` | <img src="markdown.svg" height="15pt"/> <img src="github.svg" height="15pt"/> <img src="gitlab.svg" height="15pt"/> |
+| [Imágen](#imágenes) | ```[alt](url)``` | ```[Logo de IOChannel]```\(https://iochannel.tech/logo) | <img src="markdown.svg" height="15pt"/> <img src="github.svg" height="15pt"/> <img src="gitlab.svg" height="15pt"/> |
+| [Imágen con título](#imágenes) | ```[alt](url título)``` | ```[Logo de IOChannel]```(https://iochannel.tech/logo) ```"Logotipo de IOChannel" )``` | <img src="github.svg" height="15pt"/> <img src="gitlab.svg" height="15pt"/> |
+| [Referencia a nota al margen](#notas-al-margen--) | ```[^1]``` | ```véase nota [^1]``` | <img src="github.svg" height="15pt"/> <img src="gitlab.svg" height="15pt"/> |
 
 ### Formatos de Título:
 
 | Formato | Símbolo | Ejemplo | Disponible en |
 | ------- | :-----: | ------- | ---: |
-| [Encabezado principal <br> Título 1](#títulos) | ```#``` | ```# Esto sería un título```| ![markdown] ![github] ![gitlab] |
-| [Encabezado secundario <br> Título 2](#títulos) | ```##``` | ```## Esto sería un subtítulo```| ![markdown] ![github] ![gitlab] |
-| [Título de nivel 3](#títulos) | ```###``` | ```### Esto sería un apartado ```| ![markdown] ![github] ![gitlab] |
-| [Título de nivel 4](#títulos) | ```####``` | ```#### Esto sería un subapartado``` | ![markdown] ![github] ![gitlab] |
-| [Título de nivel 5](#títulos) | ```#####``` | ```##### Esto sería una sección``` | ![markdown] ![github] ![gitlab] |
-| [Título de nivel 6](#títulos) | ```######``` | ```###### Esto sería una subsección``` | ![markdown] ![github] ![gitlab] |
+| [Encabezado principal <br> Título 1](#títulos) | ```#``` | ```# Esto sería un título```| <img src="markdown.svg" height="15pt"/> <img src="github.svg" height="15pt"/> <img src="gitlab.svg" height="15pt"/> |
+| [Encabezado secundario <br> Título 2](#títulos) | ```##``` | ```## Esto sería un subtítulo```| <img src="markdown.svg" height="15pt"/> <img src="github.svg" height="15pt"/> <img src="gitlab.svg" height="15pt"/> |
+| [Título de nivel 3](#títulos) | ```###``` | ```### Esto sería un apartado ```| <img src="markdown.svg" height="15pt"/> <img src="github.svg" height="15pt"/> <img src="gitlab.svg" height="15pt"/> |
+| [Título de nivel 4](#títulos) | ```####``` | ```#### Esto sería un subapartado``` | <img src="markdown.svg" height="15pt"/> <img src="github.svg" height="15pt"/> <img src="gitlab.svg" height="15pt"/> |
+| [Título de nivel 5](#títulos) | ```#####``` | ```##### Esto sería una sección``` | <img src="markdown.svg" height="15pt"/> <img src="github.svg" height="15pt"/> <img src="gitlab.svg" height="15pt"/> |
+| [Título de nivel 6](#títulos) | ```######``` | ```###### Esto sería una subsección``` | <img src="markdown.svg" height="15pt"/> <img src="github.svg" height="15pt"/> <img src="gitlab.svg" height="15pt"/> |
 
 ### Formatos de listas:
 
 | Formato | Símbolo | Ejemplo | Disponible en |
 | ------- | :----- | ------- | ---: |
-| [Lista](#listas) | ```-```<br>```*```<br>```+``` |  ```- Esto es una lista```<br> ```- Con varios elementos```<br> &nbsp;&nbsp;&nbsp;&nbsp;```* Esto sería una sublista```<br> &nbsp;&nbsp;&nbsp;&nbsp;```* Con varios elementos``` | ![markdown] ![github] ![gitlab] |
-| [Lista numerada](#listas-numeradas) | ```1.```<br>```2.```<br>```3.``` | ```1. Esto es el primer elemento```<br>```2. Esto es el segundo elemento ```| ![markdown] ![github] ![gitlab] |
-| [Lista de tareas](#listas-de-tareas--) | ```- []```<br>\```- [x]``` | \- ```[x] Esta es una tarea realizada```<br>\- ```[ ] Esta es una tarea sin realizar``` | ![github] ![gitlab] |
+| [Lista](#listas) | ```-```<br>```*```<br>```+``` |  ```- Esto es una lista```<br> ```- Con varios elementos```<br> &nbsp;&nbsp;&nbsp;&nbsp;```* Esto sería una sublista```<br> &nbsp;&nbsp;&nbsp;&nbsp;```* Con varios elementos``` | <img src="markdown.svg" height="15pt"/> <img src="github.svg" height="15pt"/> <img src="gitlab.svg" height="15pt"/> |
+| [Lista numerada](#listas-numeradas) | ```1.```<br>```2.```<br>```3.``` | ```1. Esto es el primer elemento```<br>```2. Esto es el segundo elemento ```| <img src="markdown.svg" height="15pt"/> <img src="github.svg" height="15pt"/> <img src="gitlab.svg" height="15pt"/> |
+| [Lista de tareas](#listas-de-tareas--) | ```- []```<br>\```- [x]``` | \- ```[x] Esta es una tarea realizada```<br>\- ```[ ] Esta es una tarea sin realizar``` | <img src="github.svg" height="15pt"/> <img src="gitlab.svg" height="15pt"/> |
 
 ### Formatos especiales de bloque:
 | Formato | Símbolo | Ejemplo | Disponible en |
 | ------- | :----- | ------- | ---: |
-| [Línea de separación](#línea-de-separación) | ```---```<br>```***``` | ```---``` | ![markdown] ![github] ![gitlab] |
-| [Cita](#citas) | ```>``` | ```> Esto aparecería como una cita.```<br><br>```> Que podría tener varias líneas```<br>```> y su **propio formato**``` | ![markdown] ![github] ![gitlab] |
-| [Código](#código) |  ` ```formato`<br>`CONTENIDO`<br>` ``` ` | ` ```bash`<br>`echo HOLA`<br>` ``` ` | ![github] ![gitlab] |
-| [Nota al margen](#notas-al-margen--) | ```[^]:``` | ```[^1]: Esto es una nota al margen``` | ![github] ![gitlab] |
+| [Línea de separación](#línea-de-separación) | ```---```<br>```***``` | ```---``` | <img src="markdown.svg" height="15pt"/> <img src="github.svg" height="15pt"/> <img src="gitlab.svg" height="15pt"/> |
+| [Cita](#citas) | ```>``` | ```> Esto aparecería como una cita.```<br><br>```> Que podría tener varias líneas```<br>```> y su **propio formato**``` | <img src="markdown.svg" height="15pt"/> <img src="github.svg" height="15pt"/> <img src="gitlab.svg" height="15pt"/> |
+| [Código](#código) |  ` ```formato`<br>`CONTENIDO`<br>` ``` ` | ` ```bash`<br>`echo HOLA`<br>` ``` ` | <img src="github.svg" height="15pt"/> <img src="gitlab.svg" height="15pt"/> |
+| [Nota al margen](#notas-al-margen--) | ```[^]:``` | ```[^1]: Esto es una nota al margen``` | <img src="github.svg" height="15pt"/> <img src="gitlab.svg" height="15pt"/> |
 
-### Tablas: Disponible en ![github] ![gitlab]
+### Tablas: Disponible en <img src="github.svg" height="15pt"/> <img src="gitlab.svg" height="15pt"/>
 
 #### ***Ejemplo:***
 
@@ -293,12 +293,12 @@ Para añadir un enlace se pueden utilizar várias sintaxis:
 
 | ***Ejemplo:*** | ***Código:*** | ***Resultado al visualizarse:*** | ***Uso*** |
 | --- | --- |--- | --: |
-| Dirección de email | ```[ivan@iochannel.tech](mailto:ivan@iochannel.tech)``` | <ivan@iochannel.tech> | ![github] ![gitlab] |
-| Dirección de email  | ```<ivan@iochannel.tech>``` | <ivan@iochannel.tech> | ![github]  ![gitlab] |
-| Enlace sencillo | ```https://iochannel.tech``` | https://iochannel.tech | ![github] ![gitlab] |
-| Enlace sencillo | ```<https://iochannel.tech>``` | <https://iochannel.tech> | ![github] ![gitlab] |
-| Enlace con texto personalizado | ```[Web de IOChannel](https://iochannel.tech)``` | [Web de IOChannel](https://iochannel.tech) | ![markdown] ![github]  ![gitlab] |
-| Enlace que abre en nueva pestaña | ```[Web de IOChannel](https://iochannel.tech){:target="_blank"}``` | [Web de IOChannel](https://iochannel.tech){:target="_blank"} | ![gitlab] |
+| Dirección de email | ```[ivan@iochannel.tech](mailto:ivan@iochannel.tech)``` | <ivan@iochannel.tech> | <img src="github.svg" height="15pt"/> <img src="gitlab.svg" height="15pt"/> |
+| Dirección de email  | ```<ivan@iochannel.tech>``` | <ivan@iochannel.tech> | <img src="github.svg" height="15pt"/>  <img src="gitlab.svg" height="15pt"/> |
+| Enlace sencillo | ```https://iochannel.tech``` | https://iochannel.tech | <img src="github.svg" height="15pt"/> <img src="gitlab.svg" height="15pt"/> |
+| Enlace sencillo | ```<https://iochannel.tech>``` | <https://iochannel.tech> | <img src="github.svg" height="15pt"/> <img src="gitlab.svg" height="15pt"/> |
+| Enlace con texto personalizado | ```[Web de IOChannel](https://iochannel.tech)``` | [Web de IOChannel](https://iochannel.tech) | <img src="markdown.svg" height="15pt"/> <img src="github.svg" height="15pt"/>  <img src="gitlab.svg" height="15pt"/> |
+| Enlace que abre en nueva pestaña | ```[Web de IOChannel](https://iochannel.tech){:target="_blank"}``` | [Web de IOChannel](https://iochannel.tech){:target="_blank"} | <img src="gitlab.svg" height="15pt"/> |
 
 
 #### ***Trucos:***
