@@ -120,7 +120,6 @@ En esta tabla resumo la mayor parte de símbolos utilizados en markdown, su sign
 | [Código](#código) |  ` ```formato`<br>`CONTENIDO`<br>` ``` ` | ` ```bash`<br>`echo HOLA`<br>` ``` ` | ✘ |
 | [Nota al margen](#notas-al-margen) | ```[^]:``` | ```[\^1]: Esto es una nota al margen``` | ✘ |
 
-
 ### Tablas:
 
 #### Código
@@ -269,14 +268,16 @@ Para añadir un salto de línea dentro de un párrafo se utilizar el texto `<br>
 
 Para añadir un enlace se pueden utilizar várias sintaxis:
 
-| ***Ejemplo:*** | ***Código:*** | ***Resultado al visualizarse:*** |
-| --- | --- |--- |
-| Dirección de email | ```[ivan@iochannel.tech](mailto:ivan@iochannel.tech)``` | <ivan@iochannel.tech> |
-| Dirección de email [^2] | ```<ivan@iochannel.tech>``` | <ivan@iochannel.tech> |
-| Enlace sencillo [^2] | ```https://iochannel.tech``` | https://iochannel.tech |
-| Enlace sencillo [^2] | ```<https://iochannel.tech>``` | <https://iochannel.tech> |
-| Enlace con texto personalizado | ```[Web de IOChannel](https://iochannel.tech)``` | [Web de IOChannel](https://iochannel.tech) |
-| Enlace que abre en nueva pestaña [^2] | ```[Web de IOChannel](https://iochannel.tech){:target="_blank"}``` | [Web de IOChannel](https://iochannel.tech){:target="_blank"} |
+
+| ***Ejemplo:*** | ***Código:*** | ***Resultado al visualizarse:*** | ***Uso*** |
+| --- | --- |--- | --: |
+| Dirección de email | ```[ivan@iochannel.tech](mailto:ivan@iochannel.tech)``` | <ivan@iochannel.tech> | ![markdown] ![github] ![gitlab] |
+| Dirección de email  | ```<ivan@iochannel.tech>``` | <ivan@iochannel.tech> | ![github]  ![gitlab] |
+| Enlace sencillo | ```https://iochannel.tech``` | https://iochannel.tech | ![github] ![gitlab] |
+| Enlace sencillo | ```<https://iochannel.tech>``` | <https://iochannel.tech> | ![github] ![gitlab] |
+| Enlace con texto personalizado | ```[Web de IOChannel](https://iochannel.tech)``` | [Web de IOChannel](https://iochannel.tech) | ![markdown] ![github]  ![gitlab] |
+| Enlace que abre en nueva pestaña | ```[Web de IOChannel](https://iochannel.tech){:target="_blank"}``` | [Web de IOChannel](https://iochannel.tech){:target="_blank"} | ![github] ![gitlab] |
+
 
 #### ***Trucos:***
 
@@ -321,7 +322,7 @@ La línea anterior no se mostrarrá al formatear el documento. Simplemente la he
 
 ---
 
-### Notas al margen
+### Notas al margen <img src="github.svg" alt="github" height="20pt" /> <img src="gitlab.svg" alt="gitlab" height="20pt" />
 
 Para añadir una nota al margen, por un lado definimos el texto de la nota en el lugar del documento donde queremos que se muestre al maquetarlo. Para ello utilizaremos la siguiente sintaxis:
 
@@ -426,27 +427,27 @@ El número de caracteres `#` que se utilicen, denota el nivel del título. De es
 
 #### ***Cuidado:***
 
-- ⚠️Es aconsejable dejar una línea en blanco antes y después de un título.
+- ⚠️ Es aconsejable dejar una línea en blanco antes y después de un título.
     ```md
     Si aquí hay un texto...    
-    ### Este título no debería empezar aquí.❌
-    Ni este texto aquí debajo.❌
+    ### Este título no debería empezar aquí. ❌
+    Ni este texto aquí debajo. ❌
 
-    ### Este título si está bien escrito pues le precede una línea en blanco y le sigue otra línea en blanco.✅
+    ### Este título si está bien escrito pues le precede una línea en blanco y le sigue otra línea en blanco. ✅ 
     
-    Este sería el primer párrafo dentro del apartado.✅
+    Este sería el primer párrafo dentro del apartado. ✅
 
     ```
-- ⚠️Es obligatorio dejar un espacio en blanco después del último carácter almohadilla.
+- ⚠️ Es obligatorio dejar un espacio en blanco después del último carácter almohadilla.
     ```md    
-    ### Este título sigue unas buenas prácticas.✅
+    ### Este título sigue unas buenas prácticas. ✅
 
-    ###Este no las sigue. Esto puede no ser reconocido como un título por algunos procesadores de markdown.❌
+    ###Este no las sigue. Esto puede no ser reconocido como un título por algunos procesadores de markdown. ❌
     ```
 
 #### ***Trucos:***
 
-- 💡Algunos procesadores de markdown (como los que se utilizan dentro de github o gitlab), generan idenficadores automáticamente para cada título. El identificador tiene por valor el texto del título en minúsculas y con los espacios en blanco transformacos a guiones.
+- 💡<img src="github.svg" alt="github" height="20pt" /> <img src="gitlab.svg" alt="gitlab" height="20pt" /> Algunos procesadores de markdown (como los que se utilizan dentro de github o gitlab), generan idenficadores automáticamente para cada título. El identificador tiene por valor el texto del título en minúsculas y con los espacios en blanco transformacos a guiones.
 
     ***Ejemplo***
     
@@ -464,7 +465,7 @@ El número de caracteres `#` que se utilicen, denota el nivel del título. De es
     >    El título de arriba puede referenciarse mediante el enlace: 
     >    [Ir al apartado Ejemplo de título](#ejemplo-de-título)
 
-- 💡Si estamos creando un archivo md que vaya a renderizarse automáticamente dentro de una página web (por ejemplo un archivo README.md en github o gitlab), hay que tener cuidado al utilizar un título de nivel 1, ya que al procesarse dará lugar a un elemento HTML de tipo \<h1\>. 
+- 💡 Si estamos creando un archivo md que vaya a renderizarse automáticamente dentro de una página web (por ejemplo un archivo README.md en github o gitlab), hay que tener cuidado al utilizar un título de nivel 1, ya que al procesarse dará lugar a un elemento HTML de tipo \<h1\>. 
     
     Estos servicios, por su parte, ya añaden un título de tipo \<h1\> a la página HTML en la que se incrusta el texto del archivo README.md, lo que puede suponer problemas para algunos navegadores y motores de búsqueda. 
 
@@ -503,40 +504,40 @@ Para añadir una lista sin numerar, simplemente hemos de preceder cada item de l
 
 
 #### Cuidado:
-- ⚠️Es imprescindible dejar un espacio en blanco después del guión.
+- ⚠️ Es imprescindible dejar un espacio en blanco después del guión.
     ```md    
-    - Esto es interpretado como un item de una lista.✅
+    - Esto es interpretado como un item de una lista. ✅
 
-    -Este no, pues no respeta un espacio en blanco después del guión.❌
+    -Este no, pues no respeta un espacio en blanco después del guión. ❌
     ```
 
-- ⚠️Es aconsejable dejar una línea en blanco antes y después de los items de la lista.
+- ⚠️ Es aconsejable dejar una línea en blanco antes y después de los items de la lista.
     ```md
     Si aquí hay un texto...    
-    - Aquí no debería especificar un item de una lista❌
-    Ni este texto aquí debajo.❌
+    - Aquí no debería especificar un item de una lista ❌
+    Ni este texto aquí debajo. ❌
 
-    - Este item si está bien escrito pues respeta un salto de línea previo✅
-    - Este item también está bien escrito por estar contenido en la lista✅
+    - Este item si está bien escrito pues respeta un salto de línea previo ✅
+    - Este item también está bien escrito por estar contenido en la lista ✅
     
-    Este sería un párrafor posterior a la lista.✅
+    Este sería un párrafor posterior a la lista. ✅
 
     ```
 
-- ⚠️No es aconsejable mezclar símbolos dentro de una lista.
+- ⚠️ No es aconsejable mezclar símbolos dentro de una lista.
     ```md    
-    - Esto es un item de la primera lista.✅
-    - Esto es otro item de la primera lista.✅
+    - Esto es un item de la primera lista. ✅
+    - Esto es otro item de la primera lista. ✅
 
-    * Esto es un item de la segunda lista.✅
-    * Esto es otro item de la primera lista.✅
+    * Esto es un item de la segunda lista. ✅
+    * Esto es otro item de la primera lista. ✅
 
-    + Esto es un item de la tercera lista.✅
-    + Esto es otro item de la tercera lista.✅
-    - Este item no está bien escrito pues cambia el signo utilizado para su identificación dentro de la tercera lista.❌
+    + Esto es un item de la tercera lista. ✅
+    + Esto es otro item de la tercera lista. ✅
+    - Este item no está bien escrito pues cambia el signo utilizado para su identificación dentro de la tercera lista. ❌
     ```
 
-- ⚠️Si un item de una lista tiene contenido adicional, como varios párrafos, tablas, imágenes, etc. deberán aparecer sangrados con 4 espacios o un tabulador adicionales al sangrado del item al que pertenecen.
+- ⚠️ Si un item de una lista tiene contenido adicional, como varios párrafos, tablas, imágenes, etc. deberán aparecer sangrados con 4 espacios o un tabulador adicionales al sangrado del item al que pertenecen.
 
     ***Ejemplo:***
 
@@ -582,27 +583,27 @@ Para añadir una lista numerada, simplemente hemos de preceder cada item de la l
 
 #### Cuidado:
 
-- ⚠️Es imprescindible dejar un espacio en blanco después del punto.
+- ⚠️ Es imprescindible dejar un espacio en blanco después del punto.
     ```md    
-    1. Esto es interpretado como un item de una lista.✅
+    1. Esto es interpretado como un item de una lista. ✅
 
-    1.Este no, pues no respeta un espacio en blanco después del punto.❌
+    1.Este no, pues no respeta un espacio en blanco después del punto. ❌
     ```
 
-- ⚠️Es aconsejable dejar una línea en blanco antes y después de los items de la lista.
+- ⚠️ Es aconsejable dejar una línea en blanco antes y después de los items de la lista.
     ```md
     Si aquí hay un texto...    
-    1. Aquí no debería especificar un item de una lista❌
-    Ni este texto aquí debajo.❌
+    1. Aquí no debería especificar un item de una lista ❌
+    Ni este texto aquí debajo. ❌
 
-    1. Este item si está bien escrito pues respeta un salto de línea previo✅
-    2. Este item también está bien escrito por estar contenido en la lista✅
+    1. Este item si está bien escrito pues respeta un salto de línea previo ✅
+    2. Este item también está bien escrito por estar contenido en la lista ✅
     
-    Este sería un párrafo posterior a la lista.✅
+    Este sería un párrafo posterior a la lista. ✅
 
     ```
 
-- ⚠️Si un item de una lista tiene contenido adicional, como varios párrafos, tablas, imágenes, etc. deberán aparecer sangrados con 4 espacios o un tabulador adicionales al sangrado del item al que pertenecen.
+- ⚠️ Si un item de una lista tiene contenido adicional, como varios párrafos, tablas, imágenes, etc. deberán aparecer sangrados con 4 espacios o un tabulador adicionales al sangrado del item al que pertenecen.
 
     ***Ejemplo:***
 
@@ -628,7 +629,7 @@ Para añadir una lista numerada, simplemente hemos de preceder cada item de la l
 
 #### Trucos:
 
-- 💡En una lista numerada que está sujeta a cambios constantes (añadir y eliminar items), pueden numerarse todos los elementos con un `1`. El procesador de markdown se encargará de ir asignando números secuenciales sobre los items de la lista, evitádonos así tener que reenumerar los items cada vez que haya un cambio.
+- 💡 En una lista numerada que está sujeta a cambios constantes (añadir y eliminar items), pueden numerarse todos los elementos con un `1`. El procesador de markdown se encargará de ir asignando números secuenciales sobre los items de la lista, evitádonos así tener que reenumerar los items cada vez que haya un cambio.
 
     ***Ejemplo:***
     
@@ -672,7 +673,7 @@ Además, pueden añadirse sublistas numeradas dentro de una lista no numerada y 
 
 ---
 
-### Listas de tareas
+### Listas de tareas <img src="github.svg" alt="github" height="20pt" /> <img src="gitlab.svg" alt="gitlab" height="20pt" />
 
 Las listas de tareas permiten identificar el estado de ejecución de una serie de tareas que han sido definidas.
 
@@ -682,7 +683,7 @@ Para definir una lista de tareas, basta con definir una lista no numerada normal
 - `[x]` Para representar una tarea acabada
 
 #### ***Cuidado:*** 
-- ⚠️Es importante escribir un espacio en blanco antes y después de los corchetes para que la lista sea correctamente representada como una lista de tareas.
+- ⚠️ Es importante escribir un espacio en blanco antes y después de los corchetes para que la lista sea correctamente representada como una lista de tareas.
 
 #### ***Ejemplos:***
 
@@ -748,8 +749,8 @@ Martin Fowler dijo:
 
 #### Trucos:
 
-- 💡Para que dos párrafos sean mostrados dentro del mismo quote es imprescindible que la línea en blanco que los separa también comience con el caracter `>`, tal y como se muestra en el ejemplo anterior.
-- 💡Pueden aplicarse cualquier tipo de reglas de formato dentro de una cita, es decir, añadir negritas, cursivas, imágenes, listas, tablas, etc.
+- 💡 Para que dos párrafos sean mostrados dentro del mismo quote es imprescindible que la línea en blanco que los separa también comience con el caracter `>`, tal y como se muestra en el ejemplo anterior.
+- 💡 Pueden aplicarse cualquier tipo de reglas de formato dentro de una cita, es decir, añadir negritas, cursivas, imágenes, listas, tablas, etc.
 ---
 ### Código
 
@@ -788,7 +789,7 @@ Nótese como en el ejemplo anterior, los items de la lista no están siendo pint
 
 ---
 
-### Bloques de código con resaltado de sintaxis
+### Bloques de código con resaltado de sintaxis <img src="github.svg" alt="github" height="20pt" /> <img src="gitlab.svg" alt="gitlab" height="20pt" />
 
 Al igual que los bloques de código sencillos, estos bloques contienen líneas que se muestran literalmente, evitando que los caracteres de estilo que habitualmente se utilizan en markdown sean interpretados. 
 
@@ -837,7 +838,7 @@ Nótese como en el ejemplo anterior, los items de la lista están siendo pintado
 
 ---
 
-### Tablas:
+### Tablas <img src="github.svg" alt="github" height="20pt" /> <img src="gitlab.svg" alt="gitlab" height="20pt" />
 
 Aunque la sintaxis original de markdown no permitía la inclusión de tablas, la mayor parte de procesadores de markdown modernos permiten su escritura mediante una sintaxis muy simple.
 
@@ -873,11 +874,11 @@ Como puede verse en el ejemplo, para conseguir que una columna quede alíneada a
 
 #### Notas:
 
-- ⚠️Realmente no es importante el número de guiones que escribamos en la segunda línea. Al menos hay que escribir uno, pero pueden escribirse tantos como se quiera.
+- ⚠️ Realmente no es importante el número de guiones que escribamos en la segunda línea. Al menos hay que escribir uno, pero pueden escribirse tantos como se quiera.
 
 #### Trucos:
 
-- 💡Los procesadores de markdown separan las columnas cuando encuentran el signo `|`. No es necesario que al escribir cada línea, las columnas tengan el mismo ancho.
+- 💡 Los procesadores de markdown separan las columnas cuando encuentran el signo `|`. No es necesario que al escribir cada línea, las columnas tengan el mismo ancho.
     
     No obstante hay personas a las que les gusta que la tabla no solo se muestre bien formateada al precesarse el fichero, sino incluso cuando el fichero es leido en texto plano, y prefieren añadir espacios en blanco en cada celda para que la tabla sea fácilmente legible. 
 
@@ -898,4 +899,6 @@ Como puede verse en el ejemplo, para conseguir que una columna quede alíneada a
 
 [^1]: Maquetar: Componer gráficamente un documento, asignando estilos y organizando contenido, para facilitar su lectura por personas.
 
-[^2]: Algunos elementos de sintaxis no son maquetados por todos los procesadores de markdown. En general, incluso los no estándar aquí mostrados están disponibles por la mayoría de ellos, incluidos los utilizados en github.gitlab y bitbucket.
+[markdown]: ./markdown.svg 
+[github]: ./github.svg 
+[gitlab]: ./gitlab.svg 
