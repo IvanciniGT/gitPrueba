@@ -72,6 +72,12 @@ El icono habitual que utilizamos para representar archivos markdown es:
 
 ![Icono archivo markdown](https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Markdown-mark.svg/312px-Markdown-mark.svg.png "Icono estandar de un archivo markdown")
 
+La sintaxis de markdown fue creada en el año 2004 por John Gruber, con ayuda de Aaron Swartz. La página oficial donde se detalla su especificación del lenguaje es: <https://daringfireball.net/projects/markdown/>.
+
+Más adelante han ido surgiendo implementaciones de markdown que permiten utilizar características adicionales. Entre ellas destacan:
+- [Github flavoured markdown](https://github.github.com/gfm/)
+- [Gitlab flavoured markdown](https://docs.gitlab.com/ee/user/markdown.html)
+
 ## Uso de markdown en git 
 
 Como hemos explicado en la [introducción](#introducción-a-markdown), los principales servicios de git en cloud buscan en cada carpeta un archivo llamado `README.md`. 
