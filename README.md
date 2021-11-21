@@ -13,6 +13,16 @@ Este documento está sujeto a cambios, y agradezco tu colaboración. Puedes envi
 Este archivo está bajo una licencia:
 > [Creative Commons Atribución-SinDerivadas 4.0 Internacional](http://creativecommons.org/licenses/by-nd/4.0/) ![Licencia Creative Commons](https://i.creativecommons.org/l/by-nd/4.0/80x15.png)
 
+***Convenciones***
+
+Algunas características que he expuesto en este documento no están disponibles en la especificación original de markdown, y solamente funcionan en las especificaciones extendidas implementadas en github y/o gitlab. 
+
+Por este motivo, he identificado con los iconos: <img src="github.svg" alt="github" height="20pt" /> y <img src="gitlab.svg" alt="gitlab" height="20pt" /> respectivamente aquellas características que sólo están disponibles en estas herramientas.
+
+Adicionalmente he utilizado:
+- El icono 💡&nbsp;para identificar consejos o trucos que me han sido útiles a la hora de escribir documentos en formato markdown.
+- El icono ⚠️&nbsp;para identificar problemas o dificultades con las que me he encontrado al usar ciertas características de markdown.
+
 ---
 
 # El lenguaje markdown
@@ -87,7 +97,7 @@ En esta tabla resumo la mayor parte de símbolos utilizados en markdown, su sign
 | [Salto de línea](#salto-de-línea) | ```<br>```| ```Esto es una línea<br>Esto sería otra línea``` | ✓ |
 | [Enlace sencillo](#enlaces) | ```<>``` | ```<https://iochannel.tech>``` | ✓ |
 | [Enlace personalizado ](#enlaces) | ```[texto a mostrar](url)``` | ```[Web de IOChannel](https://iochannel.tech)``` | ✓ |
-| [Enlace que abre en nueva pestaña](#enlaces) | ```[texto a mostrar](url){:target="_blank"}``` | [Web de IOChannel](https://iochannel.tech){:target="_blank"} | ✘ |
+| [Enlace que abre en nueva pestaña](#enlaces) | ```[texto a mostrar](url){:target="_blank"}``` | ```[Web de IOChannel](https://iochannel.tech){:target="_blank"}``` | ✘ |
 | [Enlace a título del mismo documento](#enlaces) <br> | ```[texto a mostrar](#url)``` | ```[Introducción](#introduccion-del-documento)``` | ✓ |
 | [Imágen](#imágenes) | ```[alt](url)``` | ```[Logo de IOChannel]```\(https://iochannel.tech/logo) | ✓ |
 | [Imágen con título](#imágenes) | ```[alt](url título)``` | ```[Logo de IOChannel]```(https://iochannel.tech/logo) ```"Logotipo de IOChannel" )``` | ✘ |
@@ -110,7 +120,7 @@ En esta tabla resumo la mayor parte de símbolos utilizados en markdown, su sign
 | ------- | :----- | ------- | ---: |
 | [Lista](#listas) | ```-```<br>```*```<br>```+``` |  ```- Esto es una lista```<br> ```- Con varios elementos```<br> &nbsp;&nbsp;&nbsp;&nbsp;```* Esto sería una sublista```<br> &nbsp;&nbsp;&nbsp;&nbsp;```* Con varios elementos``` | ✓ |
 | [Lista numerada](#listas-numeradas) | ```1.```<br>```2.```<br>```3.``` | ```1. Esto es el primer elemento```<br>```2. Esto es el segundo elemento ```| ✓ |
-| [Lista de tareas](#listas-de-tareas--) | ```-[]```<br>\- ```[x]``` | \- ```[x] Esta es una tarea realizada```<br>\- ```[ ] Esta es una tarea sin realizar``` | ✘ |
+| [Lista de tareas](#listas-de-tareas--) | ```- []```<br>\```- [x]``` | \- ```[x] Esta es una tarea realizada```<br>\- ```[ ] Esta es una tarea sin realizar``` | ✘ |
 
 ### Formatos especiales de bloque:
 | Formato | Símbolo | Ejemplo | Estandar [^2] |
@@ -118,7 +128,7 @@ En esta tabla resumo la mayor parte de símbolos utilizados en markdown, su sign
 | [Línea de separación](#línea-de-separación) | ```---```<br>```***``` | ```---``` | ✓ |
 | [Cita](#citas) | ```>``` | ```> Esto aparecería como una cita.```<br><br>```> Que podría tener varias líneas```<br>```> y su **propio formato**``` | ✓ |
 | [Código](#código) |  ` ```formato`<br>`CONTENIDO`<br>` ``` ` | ` ```bash`<br>`echo HOLA`<br>` ``` ` | ✘ |
-| [Nota al margen](#notas-al-margen--) | ```[^]:``` | ```[\^1]: Esto es una nota al margen``` | ✘ |
+| [Nota al margen](#notas-al-margen--) | ```[^]:``` | ```[^1]: Esto es una nota al margen``` | ✘ |
 
 ### Tablas:
 
@@ -349,20 +359,20 @@ Por otro lado, cuando queramos referenciar a la nota, simplemente utilizaremos `
 ```md 
 Este es el texto de un párrafo [^2], donde se referencia a una nota al margen.
 
-[^1]: Texto de la nota
+Por aquí podría haber otro párrafo, tablas, imágenes y mucho otro contenido.
+
+[^2]: Este texto es la nota al margen que se ha vinculado desde el párrafo anterior.
 ```
 
 #### ***Resultado al visualizarse:***
 
-
-> Este es el texto de un párrafo [^1], donde se referencia a una nota al margen.
+> Este es el texto de un párrafo [^2], donde se referencia a una nota al margen.
 > 
 > Por aquí podría haber otro párrafo, tablas, imágenes y mucho otro contenido.
 >
-> ***Notas:***
->
 > [^2]: Este texto es la nota al margen que se ha vinculado desde el párrafo anterior.
 
+Nótese que la nota al margen de este ejemplo aparecerá al final del documento.
 
 ---
 
@@ -394,7 +404,7 @@ Para añadir una imagen utilizamos la siguiente sintaxis:
 
 Para escribir un párrafo normal, basta con escribir una línea de texto tal cual.
 
-DDos líneas consecutivas se unirán mediante un espacio en blanco para dar lugar a un único párrafo al ser maquetado el documento.
+Dos líneas consecutivas se unirán mediante un espacio en blanco para dar lugar a un único párrafo al ser maquetado el documento.
 
 Para que dos líneas sean maquetadas como párrafos independientes, debe dejarse una línea en blanco entre ellas.
 
@@ -467,7 +477,7 @@ El número de caracteres `#` que se utilicen, denota el nivel del título. De es
 
 #### ***Trucos:***
 
-- 💡<img src="github.svg" alt="github" height="20pt" /> <img src="gitlab.svg" alt="gitlab" height="20pt" /> Algunos procesadores de markdown (como los que se utilizan dentro de github o gitlab), generan idenficadores automáticamente para cada título. El identificador tiene por valor el texto del título en minúsculas y con los espacios en blanco transformacos a guiones.
+- 💡 <img src="github.svg" alt="github" height="20pt" /> <img src="gitlab.svg" alt="gitlab" height="20pt" /> Algunos procesadores de markdown (como los que se utilizan dentro de github o gitlab), generan idenficadores automáticamente para cada título. El identificador tiene por valor el texto del título en minúsculas y con los espacios en blanco transformacos a guiones.
 
     ***Ejemplo***
     
@@ -485,9 +495,9 @@ El número de caracteres `#` que se utilicen, denota el nivel del título. De es
     >    El título de arriba puede referenciarse mediante el enlace: 
     >    [Ir al apartado Ejemplo de título](#ejemplo-de-título)
 
-- 💡&nbsp;Si estamos creando un archivo md que vaya a renderizarse automáticamente dentro de una página web (por ejemplo un archivo README.md en github o gitlab), hay que tener cuidado al utilizar un título de nivel 1, ya que al procesarse dará lugar a un elemento HTML de tipo \<h1\>. 
+- 💡&nbsp;Si estamos creando un archivo md que vaya a renderizarse automáticamente dentro de una página web (por ejemplo un archivo README.md en github o gitlab), hay que tener cuidado al utilizar un título de nivel 1, ya que al procesarse dará lugar a un elemento HTML de tipo `<h1>`. 
     
-    Estos servicios, por su parte, ya añaden un título de tipo \<h1\> a la página HTML en la que se incrusta el texto del archivo README.md, lo que puede suponer problemas para algunos navegadores y motores de búsqueda. 
+    Estos servicios, por su parte, ya añaden un título de tipo `<h1>' a la página HTML en la que se incrusta el texto del archivo README.md, lo que puede suponer problemas para algunos navegadores y motores de búsqueda. 
 
     En estos escenarios es aconsejable valorar si en lugar de utilziar un título de primer nivel, conviene directamente utilizar títulos de segundo nivel en su lugar, y evitar el uso de los títulos de primer nivel.
 
@@ -794,19 +804,19 @@ Para escribir un bloque de código sencillo basta con preceder cada línea con u
 
 #### ***Ejemplo:***
 
-```md 
-    Lista de tareas:
-    - Aprender _markdown_
-    - Aprender **git**
-    - Aprender ***github***
+```bash
+echo Copiando el archivo README.md
+cp README.md ~/README.md
+echo El archivo ha sido copiado
 ```
 
 #### ***Resultado al visualizarse:***
 
->     Lista de tareas:
->     - Aprender _markdown_
->     - Aprender **git**
->     - Aprender ***github***
+> ```bash
+> echo Copiando el archivo README.md
+> cp README.md ~/README.md
+> echo El archivo ha sido copiado
+```
 
 Nótese como en el ejemplo anterior, los items de la lista no están siendo pintados de otro color, así como tampoco los marcadores de cursiva ni negrita.
 
