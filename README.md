@@ -2,7 +2,7 @@
 
 He escrito este documento para ayudar a las personas dedicadas al mundo de la informática a entender y familiarizarse los con conceptos del lenguaje markdown.
 
-Para escribirlo he utilizado la propia sintaxis de markdown (asegurandome de incluir todos y cada uno de los recursos que nos brinda este lenguaje para maquetar documentos) de forma que pueda ser a su vez utilizado como una plantilla en la que consultar cómo conseguir un determinado resultado.
+Para escribirlo he utilizado la propia sintaxis de markdown (asegurándome de incluir todos y cada uno de los recursos que nos brinda este lenguaje para maquetar documentos) de forma que pueda ser a su vez utilizado como una plantilla en la que consultar cómo conseguir un determinado resultado.
 
 La última versión de este documento puede encontrarse en:
 > <https://gitlab.iochannel.tech/markdown/README.md>
@@ -77,7 +77,7 @@ El icono habitual que utilizamos para representar archivos markdown es:
 Como hemos explicado en la [introducción](#introducción-a-markdown), los principales servicios de git en cloud buscan en cada carpeta un archivo llamado `README.md`. 
 Si el archivo existe, automáticamente lo convierten a HTML aplicando unas reglas de maquetado que facilitan su lectura por personas y lo muestran por pantalla.
 
-Los desarrolladores que colocan su código en un sistema de control de versión git, utilizan estos archivos para ayudar a entener el contenido de una determinada carpeta o repositorio al resto de personas interesadas en el proyecto.
+Los desarrolladores que colocan su código en un sistema de control de versión git, utilizan estos archivos para ayudar a entender el contenido de una determinada carpeta o repositorio al resto de personas interesadas en el proyecto.
 
 ## TL; DR
 
@@ -99,8 +99,8 @@ En esta tabla resumo la mayor parte de símbolos utilizados en markdown, su sign
 | [Enlace personalizado ](#enlaces) | ```[texto a mostrar](url)``` | ```[Web de IOChannel](https://iochannel.tech)``` | <img src="markdown.svg" height="15pt"/> <img src="github.svg" height="15pt"/> <img src="gitlab.svg" height="15pt"/> |
 | [Enlace que abre en nueva pestaña](#enlaces) | ```[texto a mostrar](url){:target="_blank"}``` | ```[Web de IOChannel](https://iochannel.tech){:target="_blank"}``` | <img src="github.svg" height="15pt"/> <img src="gitlab.svg" height="15pt"/> |
 | [Enlace a título del mismo documento](#enlaces) <br> | ```[texto a mostrar](#url)``` | ```[Introducción](#introduccion-del-documento)``` | <img src="markdown.svg" height="15pt"/> <img src="github.svg" height="15pt"/> <img src="gitlab.svg" height="15pt"/> |
-| [Imágen](#imágenes) | ```[alt](url)``` | ```[Logo de IOChannel]```\(https://iochannel.tech/logo) | <img src="markdown.svg" height="15pt"/> <img src="github.svg" height="15pt"/> <img src="gitlab.svg" height="15pt"/> |
-| [Imágen con título](#imágenes) | ```[alt](url título)``` | ```[Logo de IOChannel]```(https://iochannel.tech/logo) ```"Logotipo de IOChannel" )``` | <img src="github.svg" height="15pt"/> <img src="gitlab.svg" height="15pt"/> |
+| [Imagen](#imágenes) | ```[alt](url)``` | ```[Logo de IOChannel]```\(https://iochannel.tech/logo) | <img src="markdown.svg" height="15pt"/> <img src="github.svg" height="15pt"/> <img src="gitlab.svg" height="15pt"/> |
+| [Imagen con título](#imágenes) | ```[alt](url título)``` | ```[Logo de IOChannel]```(https://iochannel.tech/logo) ```"Logotipo de IOChannel" )``` | <img src="github.svg" height="15pt"/> <img src="gitlab.svg" height="15pt"/> |
 | [Referencia a nota al margen](#notas-al-margen--) | ```[^1]``` | ```véase nota [^1]``` | <img src="github.svg" height="15pt"/> <img src="gitlab.svg" height="15pt"/> |
 
 ### Formatos de Título:
@@ -137,21 +137,21 @@ En esta tabla resumo la mayor parte de símbolos utilizados en markdown, su sign
 ```md
 | Columna 1 | Columna 2 | Columna 3 | Columna 4 |
 | --- | :--- | :---: | ---: |
-| Alíneada a la izquierda | A la izquierda | Centrada | A la derecha |
-| Alíneada a la izquierda | A a la izquierda | Centrada | A la derecha |
+| Alineada a la izquierda | A la izquierda | Centrada | A la derecha |
+| Alineada a la izquierda | A a la izquierda | Centrada | A la derecha |
 ```
 
 #### ***Resultado al visualizarse:***
 
 | Columna 1 | Columna 2 | Columna 3 | Columna 4 |
 | --- | :--- | :---: | ---: |
-| Alíneada a la izquierda | A la izquierda | Centrada | A la derecha |
-| Alíneada a la izquierda | A a la izquierda | Centrada | A la derecha |
+| Alineada a la izquierda | A la izquierda | Centrada | A la derecha |
+| Alineada a la izquierda | A a la izquierda | Centrada | A la derecha |
 
 ---
 ## Estilos y elementos dentro de un texto
 
-Dentro de una línea de texto, pueden aplicarne numerosos estilos a las palabras que aparecen, así como incrustar elementos adicionales como enlaces o imágenes.
+Dentro de una línea de texto, pueden aplicarme numerosos estilos a las palabras que aparecen, así como incrustar elementos adicionales como enlaces o imágenes.
 
 Las reglas definidas en este apartado pueden utilizarse en:
 - Párrafos normales
@@ -160,7 +160,7 @@ Las reglas definidas en este apartado pueden utilizarse en:
 - Bloques de citas
 - Títulos
 
-Estos son los estilos y elementos que pueden incluise dentro de un texto:
+Estos son los estilos y elementos que pueden incluirse dentro de un texto:
 - [Cursiva](#cursiva)
 - [Negrita](#negrita)
 - [Negrita y cursiva](#negrita-y-cursiva)
@@ -176,7 +176,7 @@ Estos son los estilos y elementos que pueden incluise dentro de un texto:
 
 ### Cursiva
 
-Utilizamos un carácter asterisco `*` o guión bajo `_` por delante y por detrás de un texto que queramos representar en cursiva.
+Utilizamos un carácter asterisco `*` o guion bajo `_` por delante y por detrás de un texto que queramos representar en cursiva.
 
 | ***Ejemplo:*** | ***Resultado al visualizarse:*** |
 | --- | --- |
@@ -188,18 +188,18 @@ Utilizamos un carácter asterisco `*` o guión bajo `_` por delante y por detrá
 - ⚠️&nbsp;Para evitar problemas con los guiones bajos en medio de una palabra, es aconsejable utilizar asteriscos en lugar de guiones bajos.
 
 #### ***Trucos:***
-- 💡&nbsp;Si queremos escribir un texto que incluya guiones bajos o que comience y acabe con guines bajos, para evitar que se muestre en cursiva y sin los guiones bajos basta con escapar el primer guión bajo con una contrabarra ```\```.
+- 💡&nbsp;Si queremos escribir un texto que incluya guiones bajos o que comience y acabe con guines bajos, para evitar que se muestre en cursiva y sin los guiones bajos basta con escapar el primer guion bajo con una contrabarra ```\```.
 
     | ***Ejemplo:*** | ***Resultado al visualizarse:*** |
     | --- | --- |
     | ```Esto: '_null_' se muestra en cursiva y sin los guiones bajos``` | Esto: '_null_' se muestra en cursiva y sin los guiones bajos |
-    | ```En cambio esto: '\_null_' se muestra con los guiones bajos y sin cursiva``` | En cambio esto: '\_null_' se muestra con los guiones bajos y sin cursiva |
+    | ```En cambio, esto: '\_null_' se muestra con los guiones bajos y sin cursiva``` | En cambio, esto: '\_null_' se muestra con los guiones bajos y sin cursiva |
 
 ---
 
 ### Negrita
 
-Utilizamos dos caracteres asterisco `**` o guión bajo `__` por delante y por detrás de un texto que queramos representar en negrita.
+Utilizamos dos caracteres asterisco `**` o guion bajo `__` por delante y por detrás de un texto que queramos representar en negrita.
 
 | ***Ejemplo:*** | ***Resultado al visualizarse:*** |
 | --- | --- |
@@ -217,13 +217,13 @@ Utilizamos dos caracteres asterisco `**` o guión bajo `__` por delante y por de
     | ***Ejemplo:*** | ***Resultado al visualizarse:*** |
     | --- | --- |
     | ```Esto: '__null__' se muestra en negrita y sin los guiones bajos``` | Esto: '__null__' se muestra en negrita y sin los guiones bajos |
-    | ```En cambio esto: '\_\_null__' se muestra con los guiones bajos y sin negrita``` | En cambio esto: '\_\_null__' se muestra con los guiones bajos y sin negrita |
+    | ```En cambio, esto: '\_\_null__' se muestra con los guiones bajos y sin negrita``` | En cambio, esto: '\_\_null__' se muestra con los guiones bajos y sin negrita |
 
 ---
 
 ### Negrita y cursiva
 
-Utilizamos tres caracteres asterisco `***` o guión bajo `___` por delante y por detrás de un texto que queramos representar en negrita y cursiva simultáneamente.
+Utilizamos tres caracteres asterisco `***` o guion bajo `___` por delante y por detrás de un texto que queramos representar en negrita y cursiva simultáneamente.
 
 | ***Ejemplo:*** | ***Resultado al visualizarse:*** |
 | --- | --- |
@@ -242,7 +242,7 @@ Utilizamos tres caracteres asterisco `***` o guión bajo `___` por delante y por
     | ***Ejemplo:*** | ***Resultado al visualizarse:*** |
     | --- | --- |
     | ```Esto: '___null___' se muestra en negrita, cursiva y sin los guiones bajos``` | Esto: '___null___' se muestra en negrita, cursiva y sin los guiones bajos |
-    | ```En cambio esto: '\_\_\_null___' se muestra con los guiones bajos y sin negrita ni cursiva``` | En cambio esto: '\_\_\_null___' se muestra con los guiones bajos y sin negrita ni cursiva |
+    | ```En cambio, esto: '\_\_\_null___' se muestra con los guiones bajos y sin negrita ni cursiva``` | En cambio, esto: '\_\_\_null___' se muestra con los guiones bajos y sin negrita ni cursiva |
 
 ---
 
@@ -288,7 +288,7 @@ Para añadir un salto de línea dentro de un párrafo se utilizar el texto `<br>
 
 ### Enlaces
 
-Para añadir un enlace se pueden utilizar várias sintaxis:
+Para añadir un enlace se pueden utilizar varias sintaxis:
 
 
 | ***Ejemplo:*** | ***Código:*** | ***Resultado al visualizarse:*** | ***Uso*** |
@@ -316,9 +316,9 @@ Para añadir un enlace se pueden utilizar várias sintaxis:
 
 En ocasiones para facilitar la lectura del código markdown, usamos enlaces referenciados. 
 
-En ellos definimos la url del enlace en un sitio del documento (normalmente al final del mismo), y podemos referenciar ese enlace a través de un idenfificador. Esto es especialmente util para URLs largas.
+En ellos definimos la url del enlace en un sitio del documento (normalmente al final del mismo), y podemos referenciar ese enlace a través de un identificador. Esto es especialmente útil para URLs largas.
 
-Además, también nos evita tener que reescribir una URL que vamos a utilizar en varios lugares, lo cúal favorece adicionalmente el mantenimiento del documento en caso de que la URL cambie en un futuro.
+Además, también nos evita tener que reescribir una URL que vamos a utilizar en varios lugares, lo cual favorece adicionalmente el mantenimiento del documento en caso de que la URL cambie en un futuro.
 
 #### ***Ejemplo:***
 
@@ -329,7 +329,7 @@ En medio de este párrafo también referencio a la [web de IO Channel][web-iocha
 
 [web-iochannel]: http://iochannel.tech "Este mensaje se mostrará en el tooltip (título del enlace)"
 
-La línea anterior no se mostrarrá al formatear el documento. Simplemente la hemos utilizado para definir la URL y evitar tener que escribirla en medio del párrafo, lo que nos permite reutilizarla y facilitar la lectura del mismo.
+La línea anterior no se mostrará al formatear el documento. Simplemente la hemos utilizado para definir la URL y evitar tener que escribirla en medio del párrafo, lo que nos permite reutilizarla y facilitar la lectura del mismo.
 ```
 
 #### ***Resultado al visualizarse:***
@@ -340,13 +340,13 @@ La línea anterior no se mostrarrá al formatear el documento. Simplemente la he
 > 
 > [web-iochannel]: http://iochannel.tech "Este mensaje se mostrará en el tooltip (título del enlace)"
 > 
-> La línea anterior no se mostrarrá al formatear el documento. Simplemente la hemos utilizado para definir la URL y evitar tener que escribirla en medio del párrafo, lo que nos permite reutilizarla y facilitar la lectura del mismo.
+> La línea anterior no se mostrará al formatear el documento. Simplemente la hemos utilizado para definir la URL y evitar tener que escribirla en medio del párrafo, lo que nos permite reutilizarla y facilitar la lectura del mismo.
 
 ---
 
 ### Notas al margen <img src="github.svg" alt="github" height="20pt" /> <img src="gitlab.svg" alt="gitlab" height="20pt" />
 
-Para añadir una nota al margen, por un lado definimos el texto de la nota en el lugar del documento donde queremos que se muestre al maquetarlo. Para ello utilizaremos la siguiente sintaxis:
+Para añadir una nota al margen, por un lado, definimos el texto de la nota en el lugar del documento donde queremos que se muestre al maquetarlo. Para ello utilizaremos la siguiente sintaxis:
 
 ```md 
 [^NUMERO DE NOTA]: Texto de la nota
@@ -386,7 +386,7 @@ Para añadir una imagen utilizamos la siguiente sintaxis:
 
 | ***Ejemplo:*** | ***Resultado al visualizarse:*** |
 | --- |--- |
-| ```![Icono archivo markdown](https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Markdown-mark.svg/312px-Markdown-mark.svg.png "Icono estandar de un archivo markdown")``` | ![Icono archivo markdown](https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Markdown-mark.svg/312px-Markdown-mark.svg.png "Icono estandar de un archivo markdown") |
+| ```![Icono archivo markdown](https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Markdown-mark.svg/312px-Markdown-mark.svg.png "Icono estándar de un archivo markdown")``` | ![Icono archivo markdown](https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Markdown-mark.svg/312px-Markdown-mark.svg.png "Icono estandar de un archivo markdown") |
 
 ---
 ## Estilos de párrafos:
@@ -477,7 +477,7 @@ El número de caracteres `#` que se utilicen, denota el nivel del título. De es
 
 #### ***Trucos:***
 
-- 💡 <img src="github.svg" alt="github" height="20pt" /> <img src="gitlab.svg" alt="gitlab" height="20pt" /> Algunos procesadores de markdown (como los que se utilizan dentro de github o gitlab), generan idenficadores automáticamente para cada título. El identificador tiene por valor el texto del título en minúsculas y con los espacios en blanco transformacos a guiones.
+- 💡 <img src="github.svg" alt="github" height="20pt" /> <img src="gitlab.svg" alt="gitlab" height="20pt" /> Algunos procesadores de markdown (como los que se utilizan dentro de github o gitlab), generan identificadores automáticamente para cada título. El identificador tiene por valor el texto del título en minúsculas y con los espacios en blanco transformados a guiones.
 
     ***Ejemplo***
     
@@ -495,11 +495,11 @@ El número de caracteres `#` que se utilicen, denota el nivel del título. De es
     >    El título de arriba puede referenciarse mediante el enlace: 
     >    [Ir al apartado Ejemplo de título](#ejemplo-de-título)
 
-- 💡&nbsp;Si estamos creando un archivo md que vaya a renderizarse automáticamente dentro de una página web (por ejemplo un archivo README.md en github o gitlab), hay que tener cuidado al utilizar un título de nivel 1, ya que al procesarse dará lugar a un elemento HTML de tipo `<h1>`. 
+- 💡&nbsp;Si estamos creando un archivo md que vaya a renderizarse automáticamente dentro de una página web (por ejemplo, un archivo README.md en github o gitlab), hay que tener cuidado al utilizar un título de nivel 1, ya que al procesarse dará lugar a un elemento HTML de tipo `<h1>`. 
     
     Estos servicios, por su parte, ya añaden un título de tipo `<h1>` a la página HTML en la que se incrusta el texto del archivo README.md, lo que puede suponer problemas para algunos navegadores y motores de búsqueda. 
 
-    En estos escenarios es aconsejable valorar si en lugar de utilziar un título de primer nivel, conviene directamente utilizar títulos de segundo nivel en su lugar, y evitar el uso de los títulos de primer nivel.
+    En estos escenarios es aconsejable valorar si en lugar de utilizar un título de primer nivel, conviene directamente utilizar títulos de segundo nivel en su lugar, y evitar el uso de los títulos de primer nivel.
 
 ---
 
@@ -516,164 +516,164 @@ Existen distintos tipos de listas que pueden definirse dentro de markdown:
 
 ### Listas no numeradas
 
-Para añadir una lista sin numerar, simplemente hemos de preceder cada item de la lista por los signos `-`, `*` o `+`.
+Para añadir una lista sin numerar, simplemente hemos de preceder cada ítem de la lista por los signos `-`, `*` o `+`.
 
 #### ***Ejemplos:***
 
 ```md    
-- Un item de una lista
-- Yo soy otro item de la misma lista
+- Un ítem de una lista
+- Yo soy otro ítem de la misma lista
 ```
 
 #### ***Resultado al visualizarse:***
 
 > Aquí viene una lista:
 >
-> - Un item de una lista
-> - Yo soy otro item de la misma lista
+> - Un ítem de una lista
+> - Yo soy otro ítem de la misma lista
 
 
 #### Cuidado:
-- ⚠️&nbsp;Es imprescindible dejar un espacio en blanco después del guión.
+- ⚠️&nbsp;Es imprescindible dejar un espacio en blanco después del guion.
     ```md    
-    - Esto es interpretado como un item de una lista. ✅
+    - Esto es interpretado como un ítem de una lista. ✅
 
-    -Este no, pues no respeta un espacio en blanco después del guión. ❌
+    -Este no, pues no respeta un espacio en blanco después del guion. ❌
     ```
 
-- ⚠️&nbsp;Es aconsejable dejar una línea en blanco antes y después de los items de la lista.
+- ⚠️&nbsp;Es aconsejable dejar una línea en blanco antes y después de los ítems de la lista.
     ```md
     Si aquí hay un texto...    
-    - Aquí no debería especificar un item de una lista ❌
+    - Aquí no debería especificar un ítem de una lista ❌
     Ni este texto aquí debajo. ❌
 
-    - Este item si está bien escrito pues respeta un salto de línea previo ✅
-    - Este item también está bien escrito por estar contenido en la lista ✅
+    - Este ítem si está bien escrito pues respeta un salto de línea previo ✅
+    - Este ítem también está bien escrito por estar contenido en la lista ✅
     
-    Este sería un párrafor posterior a la lista. ✅
+    Este sería un párrafo posterior a la lista. ✅
 
     ```
 
 - ⚠️&nbsp;No es aconsejable mezclar símbolos dentro de una lista.
     ```md    
-    - Esto es un item de la primera lista. ✅
-    - Esto es otro item de la primera lista. ✅
+    - Esto es un ítem de la primera lista. ✅
+    - Esto es otro ítem de la primera lista. ✅
 
-    * Esto es un item de la segunda lista. ✅
-    * Esto es otro item de la primera lista. ✅
+    * Esto es un ítem de la segunda lista. ✅
+    * Esto es otro ítem de la primera lista. ✅
 
-    + Esto es un item de la tercera lista. ✅
-    + Esto es otro item de la tercera lista. ✅
-    - Este item no está bien escrito pues cambia el signo utilizado para su identificación dentro de la tercera lista. ❌
+    + Esto es un ítem de la tercera lista. ✅
+    + Esto es otro ítem de la tercera lista. ✅
+    - Este ítem no está bien escrito pues cambia el signo utilizado para su identificación dentro de la tercera lista. ❌
     ```
 
-- ⚠️&nbsp;Si un item de una lista tiene contenido adicional, como varios párrafos, tablas, imágenes, etc. deberán aparecer sangrados con 4 espacios o un tabulador adicionales al sangrado del item al que pertenecen.
+- ⚠️&nbsp;Si un ítem de una lista tiene contenido adicional, como varios párrafos, tablas, imágenes, etc. deberán aparecer sangrados con 4 espacios o un tabulador adicional al sangrado del ítem al que pertenecen.
 
     ***Ejemplo:***
 
     ```md    
-    - Esto es interpretado como un item de una lista.
+    - Esto es interpretado como un ítem de una lista.
         
-        Esto sería otro párrafo dentro del mismo item
+        Esto sería otro párrafo dentro del mismo ítem
 
         [Web de IOChannel](https://iochannel.tech): Visita nuestra web
 
-    - Este ya sería otro item de la lista anterior
+    - Este ya sería otro ítem de la lista anterior
     ```    
 
     ***Resultado al visualizarse:***
 
-    > - Esto es interpretado como un item de una lista.
+    > - Esto es interpretado como un ítem de una lista.
     >     
-    >     Esto sería otro párrafo dentro del mismo item
+    >     Esto sería otro párrafo dentro del mismo ítem
     > 
     >     [Web de IOChannel](https://iochannel.tech): Visita nuestra web
     > 
-    > - Este ya sería otro item de la lista anterior
+    > - Este ya sería otro ítem de la lista anterior
 
 ---
 ### Listas numeradas
 
-Para añadir una lista numerada, simplemente hemos de preceder cada item de la lista por el número de item seguido de un punto y un espacio en blanco
+Para añadir una lista numerada, simplemente hemos de preceder cada ítem de la lista por el número de ítem seguido de un punto y un espacio en blanco
 
 #### ***Ejemplos:***
 
 ```md    
-1. Un item de una lista
-2. Yo soy otro item de la misma lista
+1. Un ítem de una lista
+2. Yo soy otro ítem de la misma lista
 ```
 
 #### ***Resultado al visualizarse:***
 
 > Aquí viene una lista:
 >
-> 1. Un item de una lista
-> 2. Yo soy otro item de la misma lista
+> 1. Un ítem de una lista
+> 2. Yo soy otro ítem de la misma lista
 
 
 #### Cuidado:
 
 - ⚠️&nbsp;Es imprescindible dejar un espacio en blanco después del punto.
     ```md    
-    1. Esto es interpretado como un item de una lista. ✅
+    1. Esto es interpretado como un ítem de una lista. ✅
 
     1.Este no, pues no respeta un espacio en blanco después del punto. ❌
     ```
 
-- ⚠️&nbsp;Es aconsejable dejar una línea en blanco antes y después de los items de la lista.
+- ⚠️&nbsp;Es aconsejable dejar una línea en blanco antes y después de los ítems de la lista.
     ```md
     Si aquí hay un texto...    
-    1. Aquí no debería especificar un item de una lista ❌
+    1. Aquí no debería especificar un ítem de una lista ❌
     Ni este texto aquí debajo. ❌
 
-    1. Este item si está bien escrito pues respeta un salto de línea previo ✅
-    2. Este item también está bien escrito por estar contenido en la lista ✅
+    1. Este ítem si está bien escrito pues respeta un salto de línea previo ✅
+    2. Este ítem también está bien escrito por estar contenido en la lista ✅
     
     Este sería un párrafo posterior a la lista. ✅
 
     ```
 
-- ⚠️&nbsp;Si un item de una lista tiene contenido adicional, como varios párrafos, tablas, imágenes, etc. deberán aparecer sangrados con 4 espacios o un tabulador adicionales al sangrado del item al que pertenecen.
+- ⚠️&nbsp;Si un ítem de una lista tiene contenido adicional, como varios párrafos, tablas, imágenes, etc. deberán aparecer sangrados con 4 espacios o un tabulador adicional al sangrado del ítem al que pertenecen.
 
     ***Ejemplo:***
 
     ```md    
-    1. Esto es interpretado como un item de una lista.
+    1. Esto es interpretado como un ítem de una lista.
         
-        Esto sería otro párrafo dentro del mismo item
+        Esto sería otro párrafo dentro del mismo ítem
 
         [Web de IOChannel](https://iochannel.tech): Visita nuestra web
 
-    2. Este ya sería otro item de la lista anterior
+    2. Este ya sería otro ítem de la lista anterior
     ```    
 
     ***Resultado al visualizarse:***
 
-    > 1. Esto es interpretado como un item de una lista.
+    > 1. Esto es interpretado como un ítem de una lista.
     >     
-    >     Esto sería otro párrafo dentro del mismo item
+    >     Esto sería otro párrafo dentro del mismo ítem
     > 
     >     [Web de IOChannel](https://iochannel.tech): Visita nuestra web
     > 
-    > 2. Este ya sería otro item de la lista anterior
+    > 2. Este ya sería otro ítem de la lista anterior
 
 #### Trucos:
 
-- 💡&nbsp;En una lista numerada que está sujeta a cambios constantes (añadir y eliminar items), pueden numerarse todos los elementos con un `1`. El procesador de markdown se encargará de ir asignando números secuenciales sobre los items de la lista, evitádonos así tener que reenumerar los items cada vez que haya un cambio.
+- 💡&nbsp;En una lista numerada que está sujeta a cambios constantes (añadir y eliminar ítems), pueden numerarse todos los elementos con un `1`. El procesador de markdown se encargará de ir asignando números secuenciales sobre los ítems de la lista, evitándonos así tener que reenumerar los ítems cada vez que haya un cambio.
 
     ***Ejemplo:***
     
     ```md    
-        1. Yo soy el primer item de la lista
-        1. Yo soy el segundo item de la lista
-        1. Yo soy el tercer item de la lista
+        1. Yo soy el primer ítem de la lista
+        1. Yo soy el segundo ítem de la lista
+        1. Yo soy el tercer ítem de la lista
     ```
     
     ***Resultado al visualizarse:***
     
-    > 1. Yo soy el primer item de la lista
-    > 1. Yo soy el segundo item de la lista
-    > 1. Yo soy el tercer item de la lista
+    > 1. Yo soy el primer ítem de la lista
+    > 1. Yo soy el segundo ítem de la lista
+    > 1. Yo soy el tercer ítem de la lista
 
 ---
 
@@ -686,20 +686,20 @@ Además, pueden añadirse sublistas numeradas dentro de una lista no numerada y 
 #### ***Ejemplos:***
 
 ```md    
-+ Un item de una lista
-+ Yo soy otro item de la misma lista
-    1. Yo soy un item de la sublista
-    2. Yo soy otro item de la misma sublista
-+ Yo soy el último item de la lista principal
++ Un ítem de una lista
++ Yo soy otro ítem de la misma lista
+    1. Yo soy un ítem de la sublista
+    2. Yo soy otro ítem de la misma sublista
++ Yo soy el último ítem de la lista principal
 ```
 
 #### ***Resultado al visualizarse:***
 
-> + Un item de una lista
-> + Yo soy otro item de la misma lista
->     1. Yo soy un item de la sublista
->     2. Yo soy otro item de la misma sublista
-> + Yo soy el último item de la lista principal
+> + Un ítem de una lista
+> + Yo soy otro ítem de la misma lista
+>     1. Yo soy un ítem de la sublista
+>     2. Yo soy otro ítem de la misma sublista
+> + Yo soy el último ítem de la lista principal
 
 ---
 
@@ -707,7 +707,7 @@ Además, pueden añadirse sublistas numeradas dentro de una lista no numerada y 
 
 Las listas de tareas permiten identificar el estado de ejecución de una serie de tareas que han sido definidas.
 
-Para definir una lista de tareas, basta con definir una lista no numerada normal, escribiendo despues del guión los caracteres:
+Para definir una lista de tareas, basta con definir una lista no numerada normal, escribiendo después del guion los caracteres:
 
 - `[ ]` Para representar una tarea no acabada
 - `[x]` Para representar una tarea acabada
@@ -761,7 +761,7 @@ Aquí se muestran dos formas de añadir una línea de separación.
 
 ### Citas
 
-Para representar una cita, es decir, un conjunto de líneas que representen una una sección que está siendo extraida de otra fuente, se utiliza el caracter `>`.
+Para representar una cita, es decir, un conjunto de líneas que representen una sección que está siendo extraída de otra fuente, se utiliza el carácter `>`.
 
 #### ***Ejemplo:***
 
@@ -784,7 +784,7 @@ Martin Fowler dijo:
 
 #### Trucos:
 
-- 💡&nbsp;Para que dos párrafos sean mostrados dentro del mismo quote es imprescindible que la línea en blanco que los separa también comience con el caracter `>`, tal y como se muestra en el ejemplo anterior.
+- 💡&nbsp;Para que dos párrafos sean mostrados dentro del misma cita es imprescindible que la línea en blanco que los separa también comience con el carácter `>`, tal y como se muestra en el ejemplo anterior.
 - 💡&nbsp;Pueden aplicarse cualquier tipo de reglas de formato dentro de una cita, es decir, añadir negritas, cursivas, imágenes, listas, tablas, etc.
 ---
 ### Código
@@ -818,7 +818,7 @@ Para escribir un bloque de código sencillo basta con preceder cada línea con u
 >     cp README.md ~/README.md
 >     echo El archivo ha sido copiado
 
-Nótese como en el ejemplo anterior, los items de la lista no están siendo pintados de otro color, así como tampoco los marcadores de cursiva ni negrita.
+Nótese como en el ejemplo anterior, los ítems de la lista no están siendo pintados de otro color, así como tampoco los marcadores de cursiva ni negrita.
 
 ---
 
@@ -849,7 +849,7 @@ cp README.md ~/README.md
 echo El archivo ha sido copiado
 ```
 
-Nótese como en el ejemplo anterior, los items de la lista están siendo pintados de otro color, así como se están aplicando los formatos de cursiva y negrita.
+Nótese como en el ejemplo anterior, los ítems de la lista están siendo pintados de otro color, así como se están aplicando los formatos de cursiva y negrita.
 
 #### ***Cuidado:***
 
@@ -875,18 +875,18 @@ Aunque la sintaxis original de markdown no permitía la inclusión de tablas, la
 
 Para escribir una tabla basta con:
 - Escribir una línea con los encabezados de cada columna de la tabla
-- Escribir una línea con la alíneación que se aplicará a cada columna de la tabla
+- Escribir una línea con la alineación que se aplicará a cada columna de la tabla
 - Escribir una línea para cada fila de la tabla, con los textos que se mostrarán en cada columna
 
-En todas las líneas anteriores se separaran las columnas entre sí por el caracter `|`, al que añadiremos un espacio en blanco antes y después. Realmente el añadir espacio no es obligatorio, aunque **si es una muy buena práctica**.
+En todas las líneas anteriores se separan las columnas entre sí por el carácter `|`, al que añadiremos un espacio en blanco antes y después. Realmente el añadir espacio no es obligatorio, aunque **si es una muy buena práctica**.
 
 #### ***Ejemplo***
 
 ```md
 | Columna 1 | Columna 2 | Columna 3 | Columna 4 |
 | - | :- | :-: | -: |
-| Alíneada a la izquierda | A la izquierda | Centrada | A la derecha |
-| Alíneada a la izquierda | A a la izquierda | Centrada | A la derecha |
+| Alineada a la izquierda | A la izquierda | Centrada | A la derecha |
+| Alineada a la izquierda | A a la izquierda | Centrada | A la derecha |
 ```
 
 #### Resultado al visualizarse
@@ -896,12 +896,12 @@ En todas las líneas anteriores se separaran las columnas entre sí por el carac
 > | A la izquierda | A la izquierda | Centrada | A la derecha |
 > | A la izquierda | A a la izquierda | Centrada | A la derecha |
 
-Como puede verse en el ejemplo, para conseguir que una columna quede alíneada a izquierda, derecha o centro utilizaremos al definir la segunda fila en la segunda fila la siguiente sintaxis para cada columna :
-| Alíneado a | Sintaxis |
+Como puede verse en el ejemplo, para conseguir que una columna quede alineada a izquierda, derecha o centro utilizaremos al definir la segunda fila en la segunda fila la siguiente sintaxis para cada columna:
+| Alineado a | Sintaxis |
 | - | :-: |
 | Izquierda | `-` o `:-` |
-| Alíneado | `-:` |  
-| Alíneado | `:-:` | 
+| Alineado | `-:` |  
+| Alineado | `:-:` | 
 
 #### Notas:
 
@@ -909,9 +909,9 @@ Como puede verse en el ejemplo, para conseguir que una columna quede alíneada a
 
 #### Trucos:
 
-- 💡&nbsp;Los procesadores de markdown separan las columnas cuando encuentran el signo `|`. No es necesario que al escribir cada línea, las columnas tengan el mismo ancho.
+- 💡&nbsp;Los procesadores de markdown separan las columnas cuando encuentran el signo `|`. No es necesario que, al escribir cada línea, las columnas tengan el mismo ancho.
     
-    No obstante hay personas a las que les gusta que la tabla no solo se muestre bien formateada al procesarse el fichero, sino incluso cuando el fichero es leido en texto plano, y prefieren añadir espacios en blanco en cada celda para que la tabla sea fácilmente legible. 
+    No obstante, hay personas a las que les gusta que la tabla no solo se muestre bien formateada al procesarse el fichero, sino incluso cuando el fichero es leído en texto plano, y prefieren añadir espacios en blanco en cada celda para que la tabla sea fácilmente legible. 
 
     Esto es algo totalmente opcional y no afecta a la visualización final tras procesar el documento.
 
