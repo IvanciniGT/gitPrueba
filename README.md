@@ -175,10 +175,10 @@ Utilizamos un carácter asterisco `*` o guión bajo `_` por delante y por detrá
 
 
 #### ***Cuidado:***
-- ⚠️ Para evitar problemas con los guiones bajos en medio de una palabra, es aconsejable utilizar asteriscos en lugar de guiones bajos.
+- ⚠️&nbsp;Para evitar problemas con los guiones bajos en medio de una palabra, es aconsejable utilizar asteriscos en lugar de guiones bajos.
 
 #### ***Trucos:***
-- 💡 Si queremos escribir un texto que incluya guiones bajos o que comience y acabe con guines bajos, para evitar que se muestre en cursiva y sin los guiones bajos basta con escapar el primer guión bajo con una contrabarra ```\```.
+- 💡&nbsp;Si queremos escribir un texto que incluya guiones bajos o que comience y acabe con guines bajos, para evitar que se muestre en cursiva y sin los guiones bajos basta con escapar el primer guión bajo con una contrabarra ```\```.
 
     | ***Ejemplo:*** | ***Resultado al visualizarse:*** |
     | --- | --- |
@@ -198,11 +198,11 @@ Utilizamos dos caracteres asterisco `**` o guión bajo `__` por delante y por de
 
 #### ***Cuidado:***
 
-- ⚠️ Para evitar problemas con los guiones bajos en medio de una palabra, es aconsejable utilizar asteriscos en lugar de guiones bajos.
+- ⚠️&nbsp;Para evitar problemas con los guiones bajos en medio de una palabra, es aconsejable utilizar asteriscos en lugar de guiones bajos.
 
 #### ***Trucos:***
 
-- 💡 Si queremos escribir un texto que incluya 2 guiones bajos o que comience y acabe con 2 guiones bajos, para evitar que se muestre en negrita y sin los guiones bajos basta con escapar los dos primeros guiones bajos con una contrabarra ```\```.
+- 💡&nbsp;Si queremos escribir un texto que incluya 2 guiones bajos o que comience y acabe con 2 guiones bajos, para evitar que se muestre en negrita y sin los guiones bajos basta con escapar los dos primeros guiones bajos con una contrabarra ```\```.
 
     | ***Ejemplo:*** | ***Resultado al visualizarse:*** |
     | --- | --- |
@@ -222,11 +222,11 @@ Utilizamos tres caracteres asterisco `***` o guión bajo `___` por delante y por
 
 #### ***Cuidado:***
 
-- ⚠️ Para evitar problemas con los guiones bajos en medio de una palabra, es aconsejable utilizar asteriscos en lugar de guiones bajos.
+- ⚠️&nbsp;Para evitar problemas con los guiones bajos en medio de una palabra, es aconsejable utilizar asteriscos en lugar de guiones bajos.
 
 #### ***Trucos:***
 
-- 💡 Si queremos escribir un texto que incluya 3 guiones bajos o que comience y acabe con 3 guiones bajos, para evitar que se muestre en negrita, cursiva y sin los guiones bajos basta con escapar los tres primeros guiones bajos con una contrabarra ```\```.
+- 💡&nbsp;Si queremos escribir un texto que incluya 3 guiones bajos o que comience y acabe con 3 guiones bajos, para evitar que se muestre en negrita, cursiva y sin los guiones bajos basta con escapar los tres primeros guiones bajos con una contrabarra ```\```.
 
 
     | ***Ejemplo:*** | ***Resultado al visualizarse:*** |
@@ -246,7 +246,7 @@ Utilizamos un carácter contra-comilla (también denominado acento agudo) `` ` `
 | ```Esta `palabra` se muestra como código``` | Esta `palabra` se muestra como código  |
 
 #### ***Trucos:***
-- 💡 Si queremos escribir un texto que incluya una contra-comilla, para evitar que se interprete como código utilizaremos dos contracomillas para enmarcar el texto a mostrar.
+- 💡&nbsp;Si queremos escribir un texto que incluya una contra-comilla, para evitar que se interprete como código utilizaremos dos contracomillas para enmarcar el texto a mostrar.
 
     
     | ***Ejemplo:*** | ***Resultado al visualizarse:*** |
@@ -293,7 +293,7 @@ Para añadir un enlace se pueden utilizar várias sintaxis:
 
 #### ***Trucos:***
 
-- 💡 Para aplicar formato a un enlace basta con añadirle alrededor las marcas pertinentes englobando todo el enlace o solamente el texto que se visualiza en pantalla
+- 💡&nbsp;Para aplicar formato a un enlace basta con añadirle alrededor las marcas pertinentes englobando todo el enlace o solamente el texto que se visualiza en pantalla
     
     | ***Ejemplo:*** | ***Código:*** | ***Resultado al visualizarse:*** |
     | --- | --- |--- |
@@ -447,7 +447,7 @@ El número de caracteres `#` que se utilicen, denota el nivel del título. De es
 
 #### ***Cuidado:***
 
-- ⚠️ Es aconsejable dejar una línea en blanco antes y después de un título.
+- ⚠️&nbsp;Es aconsejable dejar una línea en blanco antes y después de un título.
     ```md
     Si aquí hay un texto...    
     ### Este título no debería empezar aquí. ❌
@@ -458,7 +458,7 @@ El número de caracteres `#` que se utilicen, denota el nivel del título. De es
     Este sería el primer párrafo dentro del apartado. ✅
 
     ```
-- ⚠️ Es obligatorio dejar un espacio en blanco después del último carácter almohadilla.
+- ⚠️&nbsp;Es obligatorio dejar un espacio en blanco después del último carácter almohadilla.
     ```md    
     ### Este título sigue unas buenas prácticas. ✅
 
@@ -485,7 +485,7 @@ El número de caracteres `#` que se utilicen, denota el nivel del título. De es
     >    El título de arriba puede referenciarse mediante el enlace: 
     >    [Ir al apartado Ejemplo de título](#ejemplo-de-título)
 
-- 💡 Si estamos creando un archivo md que vaya a renderizarse automáticamente dentro de una página web (por ejemplo un archivo README.md en github o gitlab), hay que tener cuidado al utilizar un título de nivel 1, ya que al procesarse dará lugar a un elemento HTML de tipo \<h1\>. 
+- 💡&nbsp;Si estamos creando un archivo md que vaya a renderizarse automáticamente dentro de una página web (por ejemplo un archivo README.md en github o gitlab), hay que tener cuidado al utilizar un título de nivel 1, ya que al procesarse dará lugar a un elemento HTML de tipo \<h1\>. 
     
     Estos servicios, por su parte, ya añaden un título de tipo \<h1\> a la página HTML en la que se incrusta el texto del archivo README.md, lo que puede suponer problemas para algunos navegadores y motores de búsqueda. 
 
@@ -524,14 +524,14 @@ Para añadir una lista sin numerar, simplemente hemos de preceder cada item de l
 
 
 #### Cuidado:
-- ⚠️ Es imprescindible dejar un espacio en blanco después del guión.
+- ⚠️&nbsp;Es imprescindible dejar un espacio en blanco después del guión.
     ```md    
     - Esto es interpretado como un item de una lista. ✅
 
     -Este no, pues no respeta un espacio en blanco después del guión. ❌
     ```
 
-- ⚠️ Es aconsejable dejar una línea en blanco antes y después de los items de la lista.
+- ⚠️&nbsp;Es aconsejable dejar una línea en blanco antes y después de los items de la lista.
     ```md
     Si aquí hay un texto...    
     - Aquí no debería especificar un item de una lista ❌
@@ -544,7 +544,7 @@ Para añadir una lista sin numerar, simplemente hemos de preceder cada item de l
 
     ```
 
-- ⚠️ No es aconsejable mezclar símbolos dentro de una lista.
+- ⚠️&nbsp;No es aconsejable mezclar símbolos dentro de una lista.
     ```md    
     - Esto es un item de la primera lista. ✅
     - Esto es otro item de la primera lista. ✅
@@ -557,7 +557,7 @@ Para añadir una lista sin numerar, simplemente hemos de preceder cada item de l
     - Este item no está bien escrito pues cambia el signo utilizado para su identificación dentro de la tercera lista. ❌
     ```
 
-- ⚠️ Si un item de una lista tiene contenido adicional, como varios párrafos, tablas, imágenes, etc. deberán aparecer sangrados con 4 espacios o un tabulador adicionales al sangrado del item al que pertenecen.
+- ⚠️&nbsp;Si un item de una lista tiene contenido adicional, como varios párrafos, tablas, imágenes, etc. deberán aparecer sangrados con 4 espacios o un tabulador adicionales al sangrado del item al que pertenecen.
 
     ***Ejemplo:***
 
@@ -603,14 +603,14 @@ Para añadir una lista numerada, simplemente hemos de preceder cada item de la l
 
 #### Cuidado:
 
-- ⚠️ Es imprescindible dejar un espacio en blanco después del punto.
+- ⚠️&nbsp;Es imprescindible dejar un espacio en blanco después del punto.
     ```md    
     1. Esto es interpretado como un item de una lista. ✅
 
     1.Este no, pues no respeta un espacio en blanco después del punto. ❌
     ```
 
-- ⚠️ Es aconsejable dejar una línea en blanco antes y después de los items de la lista.
+- ⚠️&nbsp;Es aconsejable dejar una línea en blanco antes y después de los items de la lista.
     ```md
     Si aquí hay un texto...    
     1. Aquí no debería especificar un item de una lista ❌
@@ -623,7 +623,7 @@ Para añadir una lista numerada, simplemente hemos de preceder cada item de la l
 
     ```
 
-- ⚠️ Si un item de una lista tiene contenido adicional, como varios párrafos, tablas, imágenes, etc. deberán aparecer sangrados con 4 espacios o un tabulador adicionales al sangrado del item al que pertenecen.
+- ⚠️&nbsp;Si un item de una lista tiene contenido adicional, como varios párrafos, tablas, imágenes, etc. deberán aparecer sangrados con 4 espacios o un tabulador adicionales al sangrado del item al que pertenecen.
 
     ***Ejemplo:***
 
@@ -649,7 +649,7 @@ Para añadir una lista numerada, simplemente hemos de preceder cada item de la l
 
 #### Trucos:
 
-- 💡 En una lista numerada que está sujeta a cambios constantes (añadir y eliminar items), pueden numerarse todos los elementos con un `1`. El procesador de markdown se encargará de ir asignando números secuenciales sobre los items de la lista, evitádonos así tener que reenumerar los items cada vez que haya un cambio.
+- 💡&nbsp;En una lista numerada que está sujeta a cambios constantes (añadir y eliminar items), pueden numerarse todos los elementos con un `1`. El procesador de markdown se encargará de ir asignando números secuenciales sobre los items de la lista, evitádonos así tener que reenumerar los items cada vez que haya un cambio.
 
     ***Ejemplo:***
     
@@ -703,7 +703,7 @@ Para definir una lista de tareas, basta con definir una lista no numerada normal
 - `[x]` Para representar una tarea acabada
 
 #### ***Cuidado:*** 
-- ⚠️ Es importante escribir un espacio en blanco antes y después de los corchetes para que la lista sea correctamente representada como una lista de tareas.
+- ⚠️&nbsp;Es importante escribir un espacio en blanco antes y después de los corchetes para que la lista sea correctamente representada como una lista de tareas.
 
 #### ***Ejemplos:***
 
@@ -772,8 +772,8 @@ Martin Fowler dijo:
 
 #### Trucos:
 
-- 💡 Para que dos párrafos sean mostrados dentro del mismo quote es imprescindible que la línea en blanco que los separa también comience con el caracter `>`, tal y como se muestra en el ejemplo anterior.
-- 💡 Pueden aplicarse cualquier tipo de reglas de formato dentro de una cita, es decir, añadir negritas, cursivas, imágenes, listas, tablas, etc.
+- 💡&nbsp;Para que dos párrafos sean mostrados dentro del mismo quote es imprescindible que la línea en blanco que los separa también comience con el caracter `>`, tal y como se muestra en el ejemplo anterior.
+- 💡&nbsp;Pueden aplicarse cualquier tipo de reglas de formato dentro de una cita, es decir, añadir negritas, cursivas, imágenes, listas, tablas, etc.
 ---
 ### Código
 
@@ -845,7 +845,7 @@ Nótese como en el ejemplo anterior, los items de la lista están siendo pintado
 
 #### ***Cuidado:***
 
-- ⚠️ Cada procesador de yaml admitirá trabajar con un determinado conjunto de lenguajes informáticos. Es importante asegurarnos que el nuestro sea representado correctamente. 
+- ⚠️&nbsp;Cada procesador de yaml admitirá trabajar con un determinado conjunto de lenguajes informáticos. Es importante asegurarnos que el nuestro sea representado correctamente. 
     
     Algunos lenguajes de uso frecuente son:
     - json
@@ -897,11 +897,11 @@ Como puede verse en el ejemplo, para conseguir que una columna quede alíneada a
 
 #### Notas:
 
-- ⚠️ Realmente no es importante el número de guiones que escribamos en la segunda línea. Al menos hay que escribir uno, pero pueden escribirse tantos como se quiera.
+- ⚠️&nbsp;Realmente no es importante el número de guiones que escribamos en la segunda línea. Al menos hay que escribir uno, pero pueden escribirse tantos como se quiera.
 
 #### Trucos:
 
-- 💡 Los procesadores de markdown separan las columnas cuando encuentran el signo `|`. No es necesario que al escribir cada línea, las columnas tengan el mismo ancho.
+- 💡&nbsp;Los procesadores de markdown separan las columnas cuando encuentran el signo `|`. No es necesario que al escribir cada línea, las columnas tengan el mismo ancho.
     
     No obstante hay personas a las que les gusta que la tabla no solo se muestre bien formateada al precesarse el fichero, sino incluso cuando el fichero es leido en texto plano, y prefieren añadir espacios en blanco en cada celda para que la tabla sea fácilmente legible. 
 
