@@ -19,7 +19,7 @@ Este archivo está bajo una licencia:
 
 1. [Introducción a markdown](#introducción-a-markdown)
 1. [Uso de markdown en git](#uso-de-markdown-en-git)
-1. [TL; DR]([tl-dr])
+1. [TL; DR]([#tl-dr])
 1. [Estilos y elementos dentro de un texto](#estilos-y-elementos-dentro-de-un-texto)
     1. [Cursiva](#cursiva)
     1. [Negrita](#negrita)
@@ -41,7 +41,7 @@ Este archivo está bajo una licencia:
         1. [Listas de tareas](#listas-de-tareas)
 1. [Formatos especiales de bloque](#formatos-especiales-de-bloque)
     1. [Línea de separación](#línea-de-separación)
-    1. [Cita](#cita)
+    1. [Cita](#citas)
     1. [Código](#código)
 1. [Tablas](#tablas)
 
@@ -84,41 +84,42 @@ En esta tabla resumo la mayor parte de símbolos utilizados en markdown, su sign
 | [Negrita y cursiva](#negrita-y-cursiva) | ***<br>___ | ```***esto sale en negrita y cursiva***```<br>```___esto también___```| ✓ |
 | [Tachado](#tachado) | ```~~```| ```~~esto sale tachado~~```| ✓ |
 | [Código](#código) | `` ` ``| `` `esto sale como código` `` | ✓ |
-| [Salto de línea](#salto-de-línea) | ```<br>```| ```Esto es una linea<br>Esto sería otra linea``` | ✓ |
-| [Enlace sencillo](#enlace-sencillo) | ```<>``` | ```<https://iochannel.tech>``` | ✓ |
-| [Enlace personalizado ](#enlace) | ```[texto a mostrar](url)``` | ```[Web de IOChannel](https://iochannel.tech)``` | ✓ |
-| [Enlace que abre en nueva pestaña](#enlace) | ```[texto a mostrar](url){:target="_blank"}``` | [Web de IOChannel](https://iochannel.tech){:target="_blank"} | ✘ |
-| [Enlace a título del mismo documento](#enlace-a-título-del-mismo-documento) <br> | ```[texto a mostrar](#url)``` | ```[Introducción](#introduccion-del-documento)``` | ✓ |
-| [Imágen](#imágen) | ```[alt](url)``` | ```[Logo de IOChannel]```\(https://iochannel.tech/logo) | ✓ |
-| [Imágen con título](#imágen-con-título) | ```[alt](url título)``` | ```[Logo de IOChannel]```(https://iochannel.tech/logo) ```"Logotipo de IOChannel" )``` | ✘ |
+| [Salto de línea](#salto-de-línea) | ```<br>```| ```Esto es una línea<br>Esto sería otra línea``` | ✓ |
+| [Enlace sencillo](#enlaces) | ```<>``` | ```<https://iochannel.tech>``` | ✓ |
+| [Enlace personalizado ](#enlaces) | ```[texto a mostrar](url)``` | ```[Web de IOChannel](https://iochannel.tech)``` | ✓ |
+| [Enlace que abre en nueva pestaña](#enlaces) | ```[texto a mostrar](url){:target="_blank"}``` | [Web de IOChannel](https://iochannel.tech){:target="_blank"} | ✘ |
+| [Enlace a título del mismo documento](#enlaces) <br> | ```[texto a mostrar](#url)``` | ```[Introducción](#introduccion-del-documento)``` | ✓ |
+| [Imágen](#imágenes) | ```[alt](url)``` | ```[Logo de IOChannel]```\(https://iochannel.tech/logo) | ✓ |
+| [Imágen con título](#imágenes) | ```[alt](url título)``` | ```[Logo de IOChannel]```(https://iochannel.tech/logo) ```"Logotipo de IOChannel" )``` | ✘ |
 | [Referencia a nota al margen](#referencia-a-nota-al-margen) | ```[^1]``` | ```véase nota [^1]``` | ✘ |
 
 ### Formatos de Título:
 
 | Formato | Símbolo | Ejemplo | Estandar [^2] |
 | ------- | :-----: | ------- | ---: |
-| [Encabezado principal <br> Título 1](#encabezado-principal-título-1) | ```#``` | ```# Esto sería un título```| ✓ |
-| [Encabezado secundario <br> Título 2](#encabezado-secundario-título-2) | ```##``` | ```## Esto sería un subtítulo```| ✓ |
-| [Título de nivel 3](#título-de-nivel-3) | ```###``` | ```### Esto sería un apartado ```| ✓ |
-| [Título de nivel 4](#título-de-nivel-4) | ```####``` | ```#### Esto sería un subapartado``` | ✓ |
-| [Título de nivel 5](#título-de-nivel-5) | ```#####``` | ```##### Esto sería una sección``` | ✓ |
-| [Título de nivel 6](#título-de-nivel-6) | ```######``` | ```###### Esto sería una subsección``` | ✓ |
+| [Encabezado principal <br> Título 1](#títulos) | ```#``` | ```# Esto sería un título```| ✓ |
+| [Encabezado secundario <br> Título 2](#títulos) | ```##``` | ```## Esto sería un subtítulo```| ✓ |
+| [Título de nivel 3](#títulos) | ```###``` | ```### Esto sería un apartado ```| ✓ |
+| [Título de nivel 4](#títulos) | ```####``` | ```#### Esto sería un subapartado``` | ✓ |
+| [Título de nivel 5](#títulos) | ```#####``` | ```##### Esto sería una sección``` | ✓ |
+| [Título de nivel 6](#títulos) | ```######``` | ```###### Esto sería una subsección``` | ✓ |
 
 ### Formatos de listas:
 
 | Formato | Símbolo | Ejemplo | Estandar [^2] |
 | ------- | :----- | ------- | ---: |
-| [Lista](#lista) | ```-```<br>```*```<br>```+``` |  ```- Esto es una lista```<br> ```- Con varios elementos```<br> &nbsp;&nbsp;&nbsp;&nbsp;```* Esto sería una sublista```<br> &nbsp;&nbsp;&nbsp;&nbsp;```* Con varios elementos``` | ✓ |
-| [Lista numerada](#lista-numerada) | ```1.```<br>```2.```<br>```3.``` | ```1. Esto es el primer elemento```<br>```2. Esto es el segundo elemento ```| ✓ |
-| [Lista de tareas](#lista-de-tareas) | ```-[]```<br>\- ```[x]``` | \- ```[x] Esta es una tarea realizada```<br>\- ```[ ] Esta es una tarea sin realizar``` | ✘ |
+| [Lista](#listas) | ```-```<br>```*```<br>```+``` |  ```- Esto es una lista```<br> ```- Con varios elementos```<br> &nbsp;&nbsp;&nbsp;&nbsp;```* Esto sería una sublista```<br> &nbsp;&nbsp;&nbsp;&nbsp;```* Con varios elementos``` | ✓ |
+| [Lista numerada](#listas-numerada) | ```1.```<br>```2.```<br>```3.``` | ```1. Esto es el primer elemento```<br>```2. Esto es el segundo elemento ```| ✓ |
+| [Lista de tareas](#listas-de-tareas) | ```-[]```<br>\- ```[x]``` | \- ```[x] Esta es una tarea realizada```<br>\- ```[ ] Esta es una tarea sin realizar``` | ✘ |
 
 ### Formatos especiales de bloque:
 | Formato | Símbolo | Ejemplo | Estandar [^2] |
 | ------- | :----- | ------- | ---: |
 | [Línea de separación](#línea-de-separación) | ```---```<br>```***``` | ```---``` | ✓ |
-| [Cita](#cita) | ```>``` | ```> Esto aparecería como una cita.```<br><br>```> Que podría tener varias lineas```<br>```> y su **propio formato**``` | ✓ |
+| [Cita](#citas) | ```>``` | ```> Esto aparecería como una cita.```<br><br>```> Que podría tener varias líneas```<br>```> y su **propio formato**``` | ✓ |
 | [Código](#código) |  ` ```formato`<br>`CONTENIDO`<br>` ``` ` | ` ```bash`<br>`echo HOLA`<br>` ``` ` | ✘ |
-| [Nota al margen](#nota-al-margen) | ```[^]:``` | ```[\^1]: Esto es una nota al margen``` | ✘ |
+| [Nota al margen](#notas-al-margen) | ```[^]:``` | ```[\^1]: Esto es una nota al margen``` | ✘ |
+
 
 ### Tablas:
 
@@ -127,21 +128,21 @@ En esta tabla resumo la mayor parte de símbolos utilizados en markdown, su sign
 ```md
 | Columna 1 | Columna 2 | Columna 3 | Columna 4 |
 | --- | :--- | :---: | ---: |
-| Alineada a la izquierda | A la izquierda | Centrada | A la derecha |
-| Alineada a la izquierda | A a la izquierda | Centrada | A la derecha |
+| Alíneada a la izquierda | A la izquierda | Centrada | A la derecha |
+| Alíneada a la izquierda | A a la izquierda | Centrada | A la derecha |
 ```
 
 #### Resultado al visualizarse
 
 | Columna 1 | Columna 2 | Columna 3 | Columna 4 |
 | --- | :--- | :---: | ---: |
-| Alineada a la izquierda | A la izquierda | Centrada | A la derecha |
-| Alineada a la izquierda | A a la izquierda | Centrada | A la derecha |
+| Alíneada a la izquierda | A la izquierda | Centrada | A la derecha |
+| Alíneada a la izquierda | A a la izquierda | Centrada | A la derecha |
 
 ---
 ## Estilos y elementos dentro de un texto
 
-Dentro de una linea de texto, pueden aplicarne numerosos estilos a las palabras que aparecen, así como incrustar elementos adicionales como enlaces o imágenes.
+Dentro de una línea de texto, pueden aplicarne numerosos estilos a las palabras que aparecen, así como incrustar elementos adicionales como enlaces o imágenes.
 
 Las reglas definidas en este apartado pueden utilizarse en:
 - Párrafos normales
@@ -254,9 +255,9 @@ Utilizamos dos caracteres virgulilla `~~` por delante y por detrás de un texto 
 
 ---
 
-### Salto de linea
+### Salto de línea
 
-Para añadir un salto de linea dentro de un párrafo se utilizar el texto `<br>`.
+Para añadir un salto de línea dentro de un párrafo se utilizar el texto `<br>`.
 
 | ***Ejemplo:*** | ***Resultado al visualizarse:*** |
 | --- | --- |
@@ -303,9 +304,9 @@ En medio de este párrafo referencio a un [enlace][web-iochannel]. La url la def
 
 En medio de este párrafo también referencio a la [web de IO Channel][web-iochannel]. Se utilizará la misma URL que en el párrafo anterior.
 
-[web-iochannel]: http://iochannel.tech "Este mensaje se mostrará en el tooltip (titulo del enlace)"
+[web-iochannel]: http://iochannel.tech "Este mensaje se mostrará en el tooltip (título del enlace)"
 
-La linea anterior no se mostrarrá al formatear el documento. Simplemente la hemos utilizado para definir la URL y evitar tener que escribirla en medio del párrafo, lo que nos permite reutilizarla y facilitar la lectura del mismo.
+La línea anterior no se mostrarrá al formatear el documento. Simplemente la hemos utilizado para definir la URL y evitar tener que escribirla en medio del párrafo, lo que nos permite reutilizarla y facilitar la lectura del mismo.
 ```
 
 #### ***Resultado al visualizarse:***
@@ -314,9 +315,9 @@ La linea anterior no se mostrarrá al formatear el documento. Simplemente la hem
 > 
 > En medio de este párrafo también referencio a la [web de IO Channel][web-iochannel]. Se utilizará la misma URL que en el párrafo anterior.
 > 
-> [web-iochannel]: http://iochannel.tech "Este mensaje se mostrará en el tooltip (titulo del enlace)"
+> [web-iochannel]: http://iochannel.tech "Este mensaje se mostrará en el tooltip (título del enlace)"
 > 
-> La linea anterior no se mostrarrá al formatear el documento. Simplemente la hemos utilizado para definir la URL y evitar tener que escribirla en medio del párrafo, lo que nos permite reutilizarla y facilitar la lectura del mismo.
+> La línea anterior no se mostrarrá al formatear el documento. Simplemente la hemos utilizado para definir la URL y evitar tener que escribirla en medio del párrafo, lo que nos permite reutilizarla y facilitar la lectura del mismo.
 
 ---
 
@@ -370,11 +371,11 @@ Para añadir una imagen utilizamos la siguiente sintaxis:
 ---
 ### Párrafos normales
 
-Para escribir un párrafo normal, basta con escribir una linea de texto tal cual.
+Para escribir un párrafo normal, basta con escribir una línea de texto tal cual.
 
-DDos lineas consecutivas se unirán mediante un espacio en blanco para dar lugar a un único párrafo al ser maquetado el documento.
+DDos líneas consecutivas se unirán mediante un espacio en blanco para dar lugar a un único párrafo al ser maquetado el documento.
 
-Para que dos lineas sean maquetadas como párrafos independientes, debe dejarse una linea en blanco entre ellas.
+Para que dos líneas sean maquetadas como párrafos independientes, debe dejarse una línea en blanco entre ellas.
 
 #### ***Ejemplo:***
 
@@ -385,7 +386,7 @@ Esto es una frase de un párrafo.
 Esto sería considerado otra frase del mismo párrafo que la línea anterior. 
 Y esta otra frase más. Estas frases se separarán entre sí mediante un espacio en blanco al ser maquetadas.
 
-Por contra, al haber respetado una linea en blanco justo encima de esta línea, esto se mostrará como un nuevo párrafo.
+Por contra, al haber respetado una línea en blanco justo encima de esta línea, esto se mostrará como un nuevo párrafo.
 ```
 
 #### ***Resultado al visualizarse:***
@@ -396,13 +397,13 @@ Por contra, al haber respetado una linea en blanco justo encima de esta línea, 
 > Esto sería considerado otra frase del mismo párrafo que la línea anterior. 
 > Y esta otra frase más. Estas frases se separarán entre sí mediante un espacio en blanco al ser maquetadas.
 > 
-> Por contra, al haber respetado una linea en blanco justo encima de esta línea, esto se mostrará como un nuevo párrafo.
+> Por contra, al haber respetado una línea en blanco justo encima de esta línea, esto se mostrará como un nuevo párrafo.
 
 ---
 
-### Titulos
+### Títulos
 
-Utilizamos el carácter `#` al principio de una linea para identificarla como un título.
+Utilizamos el carácter `#` al principio de una línea para identificarla como un título.
 
 El número de caracteres `#` que se utilicen, denota el nivel del título. De esta forma:
 - Una única almohadilla `#` establece un título de nivel 1. El más importante.
@@ -425,13 +426,13 @@ El número de caracteres `#` que se utilicen, denota el nivel del título. De es
 
 #### ***Cuidado:***
 
-- ⚠️Es aconsejable dejar una linea en blanco antes y después de un título.
+- ⚠️Es aconsejable dejar una línea en blanco antes y después de un título.
     ```md
     Si aquí hay un texto...    
     ### Este título no debería empezar aquí.❌
     Ni este texto aquí debajo.❌
 
-    ### Este título si está bien escrito pues le precede una línea en blanco y le sigue otra linea en blanco.✅
+    ### Este título si está bien escrito pues le precede una línea en blanco y le sigue otra línea en blanco.✅
     
     Este sería el primer párrafo dentro del apartado.✅
 
@@ -461,13 +462,13 @@ El número de caracteres `#` que se utilicen, denota el nivel del título. De es
     >    ### Ejemplo de título
     >
     >    El título de arriba puede referenciarse mediante el enlace: 
-    >    [Ir al apartado Ejemplo de título](#ejemplo-de-titulo)
+    >    [Ir al apartado Ejemplo de título](#ejemplo-de-título)
 
 - 💡Si estamos creando un archivo md que vaya a renderizarse automáticamente dentro de una página web (por ejemplo un archivo README.md en github o gitlab), hay que tener cuidado al utilizar un título de nivel 1, ya que al procesarse dará lugar a un elemento HTML de tipo \<h1\>. 
     
     Estos servicios, por su parte, ya añaden un título de tipo \<h1\> a la página HTML en la que se incrusta el texto del archivo README.md, lo que puede suponer problemas para algunos navegadores y motores de búsqueda. 
 
-    En estos escenarios es aconsejable valorar si en lugar de utilziar un titulo de primer nivel, conviene directamente utilizar títulos de segundo nivel en su lugar, y evitar el uso de los títulos de primer nivel.
+    En estos escenarios es aconsejable valorar si en lugar de utilziar un título de primer nivel, conviene directamente utilizar títulos de segundo nivel en su lugar, y evitar el uso de los títulos de primer nivel.
 
 ---
 
@@ -509,13 +510,13 @@ Para añadir una lista sin numerar, simplemente hemos de preceder cada item de l
     -Este no, pues no respeta un espacio en blanco después del guión.❌
     ```
 
-- ⚠️Es aconsejable dejar una linea en blanco antes y después de los items de la lista.
+- ⚠️Es aconsejable dejar una línea en blanco antes y después de los items de la lista.
     ```md
     Si aquí hay un texto...    
     - Aquí no debería especificar un item de una lista❌
     Ni este texto aquí debajo.❌
 
-    - Este item si está bien escrito pues respeta un salto de linea previo✅
+    - Este item si está bien escrito pues respeta un salto de línea previo✅
     - Este item también está bien escrito por estar contenido en la lista✅
     
     Este sería un párrafor posterior a la lista.✅
@@ -588,13 +589,13 @@ Para añadir una lista numerada, simplemente hemos de preceder cada item de la l
     1.Este no, pues no respeta un espacio en blanco después del punto.❌
     ```
 
-- ⚠️Es aconsejable dejar una linea en blanco antes y después de los items de la lista.
+- ⚠️Es aconsejable dejar una línea en blanco antes y después de los items de la lista.
     ```md
     Si aquí hay un texto...    
     1. Aquí no debería especificar un item de una lista❌
     Ni este texto aquí debajo.❌
 
-    1. Este item si está bien escrito pues respeta un salto de linea previo✅
+    1. Este item si está bien escrito pues respeta un salto de línea previo✅
     2. Este item también está bien escrito por estar contenido en la lista✅
     
     Este sería un párrafo posterior a la lista.✅
@@ -703,9 +704,9 @@ Por aprender de markdown:
 
 ---
 
-### Linea de separación
+### Línea de separación
 
-Puede añadirse fácilmente una linea de separación escribiendo una linea que solamente contenga 3 o más guiones ```---``` o asteriscos ```***```. 
+Puede añadirse fácilmente una línea de separación escribiendo una línea que solamente contenga 3 o más guiones ```---``` o asteriscos ```***```. 
 
 #### ***Ejemplo:***
 ```md
@@ -724,7 +725,7 @@ Aquí se muestran dos formas de añadir una línea de separación.
 
 ### Citas
 
-Para representar una cita, es decir, un conjunto de lineas que representen una una sección que está siendo extraida de otra fuente, se utiliza el caracter `>`.
+Para representar una cita, es decir, un conjunto de líneas que representen una una sección que está siendo extraida de otra fuente, se utiliza el caracter `>`.
 
 #### ***Ejemplo:***
 
@@ -747,12 +748,12 @@ Martin Fowler dijo:
 
 #### Trucos:
 
-- 💡Para que dos párrafos sean mostrados dentro del mismo quote es imprescindible que la linea en blanco que los separa también comience con el caracter `>`, tal y como se muestra en el ejemplo anterior.
+- 💡Para que dos párrafos sean mostrados dentro del mismo quote es imprescindible que la línea en blanco que los separa también comience con el caracter `>`, tal y como se muestra en el ejemplo anterior.
 - 💡Pueden aplicarse cualquier tipo de reglas de formato dentro de una cita, es decir, añadir negritas, cursivas, imágenes, listas, tablas, etc.
 ---
 ### Código
 
-Para representar un conjunto de lineas escritas en un determinado lenguaje informático, ya sea un lenguaje de programación, de estructuración de contenidos o de formateo, se utilizan los bloques de código.
+Para representar un conjunto de líneas escritas en un determinado lenguaje informático, ya sea un lenguaje de programación, de estructuración de contenidos o de formateo, se utilizan los bloques de código.
 
 En markdown se utilizan dos tipos de bloques de código: 
 - [los sencillos](#bloques-de-código-sencillos)
@@ -761,11 +762,11 @@ En markdown se utilizan dos tipos de bloques de código:
 ---
 ### Bloques de código sencillos
 
-Estos bloques contienen lineas que se muestran literalmente, evitando que los caracteres de estilo que habitualmente se utilizan en markdown sean interpretados. 
+Estos bloques contienen líneas que se muestran literalmente, evitando que los caracteres de estilo que habitualmente se utilizan en markdown sean interpretados. 
 
-Los procesadores de markdown habitualmente representan estas lineas dentro de un bloque que utiliza una tipo de letra monoespaciado.
+Los procesadores de markdown habitualmente representan estas líneas dentro de un bloque que utiliza una tipo de letra monoespaciado.
 
-Para escribir un bloque de código sencillo basta con preceder cada linea con un tabulador o con cuatro espacios en blanco.
+Para escribir un bloque de código sencillo basta con preceder cada línea con un tabulador o con cuatro espacios en blanco.
 
 #### ***Ejemplo:***
 
@@ -789,9 +790,9 @@ Nótese como en el ejemplo anterior, los items de la lista no están siendo pint
 
 ### Bloques de código con resaltado de sintaxis
 
-Al igual que los bloques de código sencillos, estos bloques contienen lineas que se muestran literalmente, evitando que los caracteres de estilo que habitualmente se utilizan en markdown sean interpretados. 
+Al igual que los bloques de código sencillos, estos bloques contienen líneas que se muestran literalmente, evitando que los caracteres de estilo que habitualmente se utilizan en markdown sean interpretados. 
 
-Pero a diferencia de ellos, las lineas de código aperecerán automáticamente con resaltado de sintaxis en base al lenguaje especificado en la definición del bloque.
+Pero a diferencia de ellos, las líneas de código aperecerán automáticamente con resaltado de sintaxis en base al lenguaje especificado en la definición del bloque.
 
 Para escribir un bloque de código con resaltado de sintaxis, escribiremos:
 
@@ -841,19 +842,19 @@ Nótese como en el ejemplo anterior, los items de la lista están siendo pintado
 Aunque la sintaxis original de markdown no permitía la inclusión de tablas, la mayor parte de procesadores de markdown modernos permiten su escritura mediante una sintaxis muy simple.
 
 Para escribir una tabla basta con:
-- Escribir una linea con los encabezados de cada columna de la tabla
-- Escribir una linea con la alineación que se aplicará a cada columna de la tabla
-- Escribir una linea para cada fila de la tabla, con los textos que se mostrarán en cada columna
+- Escribir una línea con los encabezados de cada columna de la tabla
+- Escribir una línea con la alíneación que se aplicará a cada columna de la tabla
+- Escribir una línea para cada fila de la tabla, con los textos que se mostrarán en cada columna
 
-En todas las lineas anteriores se separaran las columnas entre sí por el caracter `|`, al que añadiremos un espacio en blanco antes y después. Realmente el añadir espacio no es obligatorio, aunque **si es una muy buena práctica**.
+En todas las líneas anteriores se separaran las columnas entre sí por el caracter `|`, al que añadiremos un espacio en blanco antes y después. Realmente el añadir espacio no es obligatorio, aunque **si es una muy buena práctica**.
 
 #### ***Ejemplo***
 
 ```md
 | Columna 1 | Columna 2 | Columna 3 | Columna 4 |
 | - | :- | :-: | -: |
-| Alineada a la izquierda | A la izquierda | Centrada | A la derecha |
-| Alineada a la izquierda | A a la izquierda | Centrada | A la derecha |
+| Alíneada a la izquierda | A la izquierda | Centrada | A la derecha |
+| Alíneada a la izquierda | A a la izquierda | Centrada | A la derecha |
 ```
 
 #### Resultado al visualizarse
@@ -863,20 +864,20 @@ En todas las lineas anteriores se separaran las columnas entre sí por el caract
 > | A la izquierda | A la izquierda | Centrada | A la derecha |
 > | A la izquierda | A a la izquierda | Centrada | A la derecha |
 
-Como puede verse en el ejemplo, para conseguir que una columna quede alineada a izquierda, derecha o centro utilizaremos al definir la segunda fila en la segunda fila la siguiente sintaxis para cada columna :
-| Alineado a | Sintaxis |
+Como puede verse en el ejemplo, para conseguir que una columna quede alíneada a izquierda, derecha o centro utilizaremos al definir la segunda fila en la segunda fila la siguiente sintaxis para cada columna :
+| Alíneado a | Sintaxis |
 | - | :-: |
 | Izquierda | `-` o `:-` |
-| Alineado | `-:` |  
-| Alineado | `:-:` | 
+| Alíneado | `-:` |  
+| Alíneado | `:-:` | 
 
 #### Notas:
 
-- ⚠️Realmente no es importante el número de guiones que escribamos en la segunda linea. Al menos hay que escribir uno, pero pueden escribirse tantos como se quiera.
+- ⚠️Realmente no es importante el número de guiones que escribamos en la segunda línea. Al menos hay que escribir uno, pero pueden escribirse tantos como se quiera.
 
 #### Trucos:
 
-- 💡Los procesadores de markdown separan las columnas cuando encuentran el signo `|`. No es necesario que al escribir cada linea, las columnas tengan el mismo ancho.
+- 💡Los procesadores de markdown separan las columnas cuando encuentran el signo `|`. No es necesario que al escribir cada línea, las columnas tengan el mismo ancho.
     
     No obstante hay personas a las que les gusta que la tabla no solo se muestre bien formateada al precesarse el fichero, sino incluso cuando el fichero es leido en texto plano, y prefieren añadir espacios en blanco en cada celda para que la tabla sea fácilmente legible. 
 
