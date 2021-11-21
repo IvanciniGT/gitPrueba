@@ -29,7 +29,7 @@ Este archivo está bajo una licencia:
     - [Salto de línea](#salto-de-línea)
     - [Enlaces](#enlaces)
     - [Enlaces referenciados](#enlaces-referenciados)
-    - [Notas al margen](#notas-al-margen)
+    - [Notas al margen](#notas-al-margen--)
     - [Imágenes](#imágenes)
 1. [Estilos de párrafos](#estilos-de-párrafos)
     - [Párrafos normales](#párrafos-normales)
@@ -38,7 +38,7 @@ Este archivo está bajo una licencia:
         - [Listas no numeradas](#listas-no-numeradas)
         - [Listas numeradas](#listas-numeradas)
         - [Sublistas](#sublistas)
-        - [Listas de tareas](#listas-de-tareas)
+        - [Listas de tareas](#listas-de-tareas--)
 1. [Formatos especiales de bloque](#formatos-especiales-de-bloque)
     - [Línea de separación](#línea-de-separación)
     - [Cita](#citas)
@@ -80,8 +80,8 @@ En esta tabla resumo la mayor parte de símbolos utilizados en markdown, su sign
 | Formato | Símbolo | Ejemplo | Estandar [^2] |
 | ------- | :-----: | ------- | ---: |
 | [Cursiva](#cursiva) | ```*```<br>```_``` | ```*esto sale en cursiva*```<br>```_esto también_``` | ✓ |
-| [Negrita](#negrita) | ```**```<br>__ | ```**esto sale en negrita**```<br>```__``` ```esto también__``` | ✓ |
-| [Negrita y cursiva](#negrita-y-cursiva) | ***<br>___ | ```***esto sale en negrita y cursiva***```<br>```___esto también___```| ✓ |
+| [Negrita](#negrita) | ```**```<br>```__``` | ```**esto sale en negrita**```<br>```__``` ```esto también__``` | ✓ |
+| [Negrita y cursiva](#negrita-y-cursiva) |  ```***```<br>```___```  | ```***esto sale en negrita y cursiva***```<br>```___esto también___```| ✓ |
 | [Tachado](#tachado) | ```~~```| ```~~esto sale tachado~~```| ✓ |
 | [Código](#código) | `` ` ``| `` `esto sale como código` `` | ✓ |
 | [Salto de línea](#salto-de-línea) | ```<br>```| ```Esto es una línea<br>Esto sería otra línea``` | ✓ |
@@ -91,7 +91,7 @@ En esta tabla resumo la mayor parte de símbolos utilizados en markdown, su sign
 | [Enlace a título del mismo documento](#enlaces) <br> | ```[texto a mostrar](#url)``` | ```[Introducción](#introduccion-del-documento)``` | ✓ |
 | [Imágen](#imágenes) | ```[alt](url)``` | ```[Logo de IOChannel]```\(https://iochannel.tech/logo) | ✓ |
 | [Imágen con título](#imágenes) | ```[alt](url título)``` | ```[Logo de IOChannel]```(https://iochannel.tech/logo) ```"Logotipo de IOChannel" )``` | ✘ |
-| [Referencia a nota al margen](#referencia-a-nota-al-margen) | ```[^1]``` | ```véase nota [^1]``` | ✘ |
+| [Referencia a nota al margen](#notas-al-margen--) | ```[^1]``` | ```véase nota [^1]``` | ✘ |
 
 ### Formatos de Título:
 
@@ -109,8 +109,8 @@ En esta tabla resumo la mayor parte de símbolos utilizados en markdown, su sign
 | Formato | Símbolo | Ejemplo | Estandar [^2] |
 | ------- | :----- | ------- | ---: |
 | [Lista](#listas) | ```-```<br>```*```<br>```+``` |  ```- Esto es una lista```<br> ```- Con varios elementos```<br> &nbsp;&nbsp;&nbsp;&nbsp;```* Esto sería una sublista```<br> &nbsp;&nbsp;&nbsp;&nbsp;```* Con varios elementos``` | ✓ |
-| [Lista numerada](#listas-numerada) | ```1.```<br>```2.```<br>```3.``` | ```1. Esto es el primer elemento```<br>```2. Esto es el segundo elemento ```| ✓ |
-| [Lista de tareas](#listas-de-tareas) | ```-[]```<br>\- ```[x]``` | \- ```[x] Esta es una tarea realizada```<br>\- ```[ ] Esta es una tarea sin realizar``` | ✘ |
+| [Lista numerada](#listas-numeradas) | ```1.```<br>```2.```<br>```3.``` | ```1. Esto es el primer elemento```<br>```2. Esto es el segundo elemento ```| ✓ |
+| [Lista de tareas](#listas-de-tareas--) | ```-[]```<br>\- ```[x]``` | \- ```[x] Esta es una tarea realizada```<br>\- ```[ ] Esta es una tarea sin realizar``` | ✘ |
 
 ### Formatos especiales de bloque:
 | Formato | Símbolo | Ejemplo | Estandar [^2] |
@@ -118,7 +118,7 @@ En esta tabla resumo la mayor parte de símbolos utilizados en markdown, su sign
 | [Línea de separación](#línea-de-separación) | ```---```<br>```***``` | ```---``` | ✓ |
 | [Cita](#citas) | ```>``` | ```> Esto aparecería como una cita.```<br><br>```> Que podría tener varias líneas```<br>```> y su **propio formato**``` | ✓ |
 | [Código](#código) |  ` ```formato`<br>`CONTENIDO`<br>` ``` ` | ` ```bash`<br>`echo HOLA`<br>` ``` ` | ✘ |
-| [Nota al margen](#notas-al-margen) | ```[^]:``` | ```[\^1]: Esto es una nota al margen``` | ✘ |
+| [Nota al margen](#notas-al-margen--) | ```[^]:``` | ```[\^1]: Esto es una nota al margen``` | ✘ |
 
 ### Tablas:
 
@@ -159,7 +159,7 @@ Estos son los estilos y elementos que pueden incluise dentro de un texto:
 - [Salto de línea](#salto-de-línea)
 - [Enlaces](#enlaces)
 - [Enlaces referenciados](#enlaces-referenciados)
-- [Notas al margen](#notas-al-margen)
+- [Notas al margen](#notas-al-margen--)
 - [Imágenes](#imágenes)
 
 ---
@@ -347,7 +347,7 @@ Por otro lado, cuando queramos referenciar a la nota, simplemente utilizaremos `
 #### ***Ejemplo:***
 
 ```md 
-Este es el texto de un párrafo [^1], donde se referencia a una nota al margen.
+Este es el texto de un párrafo [^2], donde se referencia a una nota al margen.
 
 [^1]: Texto de la nota
 ```
@@ -361,7 +361,7 @@ Este es el texto de un párrafo [^1], donde se referencia a una nota al margen.
 >
 > ***Notas:***
 >
-> [^1]: Este texto es la nota al margen que se ha vinculado desde el párrafo anterior.
+> [^2]: Este texto es la nota al margen que se ha vinculado desde el párrafo anterior.
 
 
 ---
@@ -387,7 +387,7 @@ Para añadir una imagen utilizamos la siguiente sintaxis:
     - [Listas no numeradas](#listas-no-numeradas)
     - [Listas numeradas](#listas-numeradas)
     - [Sublistas](#sublistas)
-    - [Listas de tareas](#listas-de-tareas)
+    - [Listas de tareas](#listas-de-tareas--)
 
 ---
 ### Párrafos normales
@@ -500,7 +500,7 @@ Existen distintos tipos de listas que pueden definirse dentro de markdown:
 + [Listas no numeradas](#listas-no-numeradas)
 + [Listas numeradas](#listas-numeradas)
 + [Sublistas](#sublistas)
-+ [Listas de tareas](#listas-de-tareas)
++ [Listas de tareas](#listas-de-tareas--)
 
 ---
 
