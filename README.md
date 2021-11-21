@@ -120,7 +120,7 @@ En esta tabla resumo la mayor parte de símbolos utilizados en markdown, su sign
 | ------- | :----- | ------- | ---: |
 | [Lista](#listas) | ```-```<br>```*```<br>```+``` |  ```- Esto es una lista```<br> ```- Con varios elementos```<br> &nbsp;&nbsp;&nbsp;&nbsp;```* Esto sería una sublista```<br> &nbsp;&nbsp;&nbsp;&nbsp;```* Con varios elementos``` | <img src="markdown.svg" height="15pt"/> <img src="github.svg" height="15pt"/> <img src="gitlab.svg" height="15pt"/> |
 | [Lista numerada](#listas-numeradas) | ```1.```<br>```2.```<br>```3.``` | ```1. Esto es el primer elemento```<br>```2. Esto es el segundo elemento ```| <img src="markdown.svg" height="15pt"/> <img src="github.svg" height="15pt"/> <img src="gitlab.svg" height="15pt"/> |
-| [Lista de tareas](#listas-de-tareas--) | ```- []```<br>\```- [x]``` | \- ```[x] Esta es una tarea realizada```<br>\- ```[ ] Esta es una tarea sin realizar``` | <img src="github.svg" height="15pt"/> <img src="gitlab.svg" height="15pt"/> |
+| [Lista de tareas](#listas-de-tareas--) | ```- []```<br>```- [x]``` | \- ```[x] Esta es una tarea realizada```<br>\- ```[ ] Esta es una tarea sin realizar``` | <img src="github.svg" height="15pt"/> <img src="gitlab.svg" height="15pt"/> |
 
 ### Formatos especiales de bloque:
 | Formato | Símbolo | Ejemplo | Disponible en |
@@ -130,7 +130,7 @@ En esta tabla resumo la mayor parte de símbolos utilizados en markdown, su sign
 | [Código](#código) |  ` ```formato`<br>`CONTENIDO`<br>` ``` ` | ` ```bash`<br>`echo HOLA`<br>` ``` ` | <img src="github.svg" height="15pt"/> <img src="gitlab.svg" height="15pt"/> |
 | [Nota al margen](#notas-al-margen--) | ```[^]:``` | ```[^1]: Esto es una nota al margen``` | <img src="github.svg" height="15pt"/> <img src="gitlab.svg" height="15pt"/> |
 
-### Tablas: Disponible en <img src="github.svg" height="15pt"/> <img src="gitlab.svg" height="15pt"/>
+### Tablas (disponible en <img src="github.svg" height="15pt"/> <img src="gitlab.svg" height="15pt"/>)
 
 #### ***Ejemplo:***
 
