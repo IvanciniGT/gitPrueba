@@ -804,19 +804,17 @@ Para escribir un bloque de código sencillo basta con preceder cada línea con u
 
 #### ***Ejemplo:***
 
-```bash
-echo Copiando el archivo README.md
-cp README.md ~/README.md
-echo El archivo ha sido copiado
+```md
+    echo Copiando el archivo README.md
+    cp README.md ~/README.md
+    echo El archivo ha sido copiado
 ```
 
 #### ***Resultado al visualizarse:***
 
-> ```bash
-> echo Copiando el archivo README.md
-> cp README.md ~/README.md
-> echo El archivo ha sido copiado
-```
+>     echo Copiando el archivo README.md
+>     cp README.md ~/README.md
+>     echo El archivo ha sido copiado
 
 Nótese como en el ejemplo anterior, los items de la lista no están siendo pintados de otro color, así como tampoco los marcadores de cursiva ni negrita.
 
@@ -835,20 +833,18 @@ Para escribir un bloque de código con resaltado de sintaxis, escribiremos:
 #### ***Ejemplo:***
 
 <pre><code>```md
-Lista de tareas:
-- Aprender _markdown_
-- Aprender **git**
-- Aprender ***github***
+    echo Copiando el archivo README.md
+    cp README.md ~/README.md
+    echo El archivo ha sido copiado
 ```
 </code></pre>
 
 #### ***Resultado al visualizarse:***
 
 ```md
-Lista de tareas:
-- Aprender _markdown_
-- Aprender **git**
-- Aprender ***github***
+    echo Copiando el archivo README.md
+    cp README.md ~/README.md
+    echo El archivo ha sido copiado
 ```
 
 Nótese como en el ejemplo anterior, los items de la lista están siendo pintados de otro color, así como se están aplicando los formatos de cursiva y negrita.
