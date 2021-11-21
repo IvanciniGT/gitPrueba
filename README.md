@@ -19,30 +19,30 @@ Este archivo está bajo una licencia:
 
 1. [Introducción a markdown](#introducción-a-markdown)
 1. [Uso de markdown en git](#uso-de-markdown-en-git)
-1. [TL; DR]([#tl-dr])
+1. [TL; DR](#tl-dr)
 1. [Estilos y elementos dentro de un texto](#estilos-y-elementos-dentro-de-un-texto)
-    1. [Cursiva](#cursiva)
-    1. [Negrita](#negrita)
-    1. [Negrita y cursiva](#negrita-y-cursiva)
-    1. [Tachado](#tachado)
-    1. [Código](#código)
-    1. [Salto de línea](#salto-de-línea)
-    1. [Enlaces](#enlaces)
-    1. [Enlaces referenciados](#enlaces-referenciados)
-    1. [Notas al margen](#notas-al-margen)
-    1. [Imágenes](#imágenes)
+    - [Cursiva](#cursiva)
+    - [Negrita](#negrita)
+    - [Negrita y cursiva](#negrita-y-cursiva)
+    - [Tachado](#tachado)
+    - [Código](#código)
+    - [Salto de línea](#salto-de-línea)
+    - [Enlaces](#enlaces)
+    - [Enlaces referenciados](#enlaces-referenciados)
+    - [Notas al margen](#notas-al-margen)
+    - [Imágenes](#imágenes)
 1. [Estilos de párrafos](#estilos-de-párrafos)
-    1. [Párrafos normales](#párrafos-normales)
-    1. [Títulos](#títulos)
-    1. [Listas](#listas)
-        1. [Listas no numeradas](#listas-no-numeradas)
-        1. [Listas numeradas](#listas-numeradas)
-        1. [Sublistas](#sublistas)
-        1. [Listas de tareas](#listas-de-tareas)
+    - [Párrafos normales](#párrafos-normales)
+    - [Títulos](#títulos)
+    - [Listas](#listas)
+        - [Listas no numeradas](#listas-no-numeradas)
+        - [Listas numeradas](#listas-numeradas)
+        - [Sublistas](#sublistas)
+        - [Listas de tareas](#listas-de-tareas)
 1. [Formatos especiales de bloque](#formatos-especiales-de-bloque)
-    1. [Línea de separación](#línea-de-separación)
-    1. [Cita](#citas)
-    1. [Código](#código)
+    - [Línea de separación](#línea-de-separación)
+    - [Cita](#citas)
+    - [Código](#código)
 1. [Tablas](#tablas)
 
 ---
@@ -149,6 +149,18 @@ Las reglas definidas en este apartado pueden utilizarse en:
 - Celdas de tablas
 - Bloques de citas
 - Títulos
+
+Estos son los estilos y elementos que pueden incluise dentro de un texto:
+- [Cursiva](#cursiva)
+- [Negrita](#negrita)
+- [Negrita y cursiva](#negrita-y-cursiva)
+- [Tachado](#tachado)
+- [Código](#código)
+- [Salto de línea](#salto-de-línea)
+- [Enlaces](#enlaces)
+- [Enlaces referenciados](#enlaces-referenciados)
+- [Notas al margen](#notas-al-margen)
+- [Imágenes](#imágenes)
 
 ---
 
@@ -276,7 +288,7 @@ Para añadir un enlace se pueden utilizar várias sintaxis:
 | Enlace sencillo | ```https://iochannel.tech``` | https://iochannel.tech | ![github] ![gitlab] |
 | Enlace sencillo | ```<https://iochannel.tech>``` | <https://iochannel.tech> | ![github] ![gitlab] |
 | Enlace con texto personalizado | ```[Web de IOChannel](https://iochannel.tech)``` | [Web de IOChannel](https://iochannel.tech) | ![markdown] ![github]  ![gitlab] |
-| Enlace que abre en nueva pestaña | ```[Web de IOChannel](https://iochannel.tech){:target="_blank"}``` | [Web de IOChannel](https://iochannel.tech){:target="_blank"} | ![github] ![gitlab] |
+| Enlace que abre en nueva pestaña | ```[Web de IOChannel](https://iochannel.tech){:target="_blank"}``` | [Web de IOChannel](https://iochannel.tech){:target="_blank"} | ![gitlab] |
 
 
 #### ***Trucos:***
@@ -368,6 +380,14 @@ Para añadir una imagen utilizamos la siguiente sintaxis:
 
 ---
 ## Estilos de párrafos:
+
+- [Párrafos normales](#párrafos-normales)
+- [Títulos](#títulos)
+- [Listas](#listas)
+    - [Listas no numeradas](#listas-no-numeradas)
+    - [Listas numeradas](#listas-numeradas)
+    - [Sublistas](#sublistas)
+    - [Listas de tareas](#listas-de-tareas)
 
 ---
 ### Párrafos normales
@@ -702,6 +722,9 @@ Por aprender de markdown:
 
 ---
 ## Formatos especiales de bloque
+- [Línea de separación](#línea-de-separación)
+- [Cita](#citas)
+- [Código](#código)
 
 ---
 
