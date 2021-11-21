@@ -132,7 +132,7 @@ En esta tabla resumo la mayor parte de símbolos utilizados en markdown, su sign
 
 ### Tablas:
 
-#### Código
+#### ***Ejemplo:***
 
 ```md
 | Columna 1 | Columna 2 | Columna 3 | Columna 4 |
@@ -141,7 +141,7 @@ En esta tabla resumo la mayor parte de símbolos utilizados en markdown, su sign
 | Alíneada a la izquierda | A a la izquierda | Centrada | A la derecha |
 ```
 
-#### Resultado al visualizarse
+#### ***Resultado al visualizarse:***
 
 | Columna 1 | Columna 2 | Columna 3 | Columna 4 |
 | --- | :--- | :---: | ---: |
