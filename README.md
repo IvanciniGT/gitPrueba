@@ -1,6 +1,6 @@
 ***Sobre este documento***
 
-He escrito este documento para ayudar a las personas dedicadas al mundo de la informática a entender y familiarizarse los con conceptos del lenguaje markdown.
+  He   escrito este documento para ayudar a las personas dedicadas al mundo de la informática a entender y familiarizarse los con conceptos del lenguaje markdown.  
 
 Para escribirlo he utilizado la propia sintaxis de markdown (asegurándome de incluir todos y cada uno de los recursos que nos brinda este lenguaje para maquetar documentos) de forma que pueda ser a su vez utilizado como una plantilla en la que consultar cómo conseguir un determinado resultado.
 
